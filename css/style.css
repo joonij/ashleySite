@@ -5,15 +5,176 @@ header {
     height: 75px;
     left: 0;
     top: 0;
+    z-index: 100;
 }
 header h1 {
     position: absolute;
-    top: 50%;
+    height: 65px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+header h1 img {
+    height: 65px;
+}
+#menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#menu i {
+    position: absolute;
+    width:50px;
+    height: 50px;
+    padding-top: 75px;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #456200;
+    cursor: pointer;
+    z-index: 100;
+}
+header ul {
+    position: absolute;
+    width: 100%;
+    background:rgba(69,98,0);
+}
+ul li {
+    position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-header ul {
-    display: none;
+ul li:nth-child(1){
+    top:20%;
+}
+ul li:nth-child(2){
+    top:40%;
+}
+ul li:nth-child(3){
+    top:60%;
+}
+ul li:nth-child(4){
+    top:80%;
+}
+ul li a {
+    font-size: 50px;
+    color: #ece6cc;
+}
+#login {
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background: #456200;
+    z-index: 100;
+}
+#login input {
+    display: block;
+    float:left;
+    width: 146px;
+    height: 21px;
+    margin: 2px;
+    background: #ece6cc;
+    border: none;
+}
+#login input:nth-child(3) {
+    position: absolute;
+    width: 48px;
+    height: 46px;
+    margin: 0;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/*main*/
+#main {
+    width: 100%;
+    background: url(../img/main_background.jpg);
+    background-size: cover;
+}
+.carousel {
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 510px;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+.carousel-cell:nth-child(1){
+    background: url(../img/main_img_1.jpg) no-repeat 50%;
+    background-size: contain;
+}
+.carousel-cell:nth-child(2){
+    background: url(../img/main_img_2.jpg) no-repeat 50%;
+    background-size: contain;
+}
+.carousel-cell:nth-child(3){
+    background: url(../img/main_img_3.jpg) no-repeat 50%;
+    background-size: contain;
+}
+.carousel-cell:nth-child(4){
+    background: url(../img/main_img_4.jpg) no-repeat 50%;
+    background-size: contain;
+}
+.carousel-cell:nth-child(5){
+    background: url(../img/main_img_5.jpg) no-repeat 50%;
+    background-size: contain;
+}
+
+
+/*notice*/
+#notice {
+    width: 100%;
+    background: url(../img/notice_background.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+/*type*/
+#type {
+    overflow: hidden;
+}
+.type_cover {
+    float: left;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#classic .type_cover {
+    background: url("../img/type_classic.png") no-repeat 50% 40%;
+    background: cover;
+}
+#w .type_cover {
+    background: url("../img/type_w.png") no-repeat 50% 40%;
+    background: cover;
+}
+#a_lab .type_cover {
+    background: url("../img/type_a_lab.png") no-repeat 50% 40%;
+    background: cover;
+}
+#queens .type_cover {
+    background: url("../img/type_queens.png") no-repeat 50% 40%;
+    background: cover;
+}
+#classic .type_content {
+    
+}
+
+
+/*store*/
+#store {
+}
+
+
+/*phone*/
+#phone {
 }
 
 
@@ -21,11 +182,23 @@ header ul {
 footer {
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 60px;
     left: 0;
     bottom: 0;
+    background: #456200;
+    z-index: 100;
 }
-
+#copyright{
+    position: absolute;
+    top:50%;
+    width: 500px;
+    left: 5%;
+    transform: translateY(-50%);
+}
+footer span {
+    display: block;
+    font-size: 10px;
+}
 footer h1 {
     position: absolute;
     height: 40px;
@@ -33,11 +206,18 @@ footer h1 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+footer h1 img{
+    height: 40px;
+}
 #sns {
     position: absolute;
-    width: 300px;
+    width: 135px;
     height: 40px;
     top:50%;
-    right: 50px;
+    right: 20%;
     transform: translateY(-50%);
+}
+#sns img {
+    height: 40px;
+    margin-left: 5px;
 }

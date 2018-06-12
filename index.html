@@ -9,8 +9,10 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="js/javascript.js"></script>
 </head>
 
@@ -18,9 +20,12 @@
     <header>
         <nav>
             <h1>
-                <img src="img/logo.png" alt="logo">
+                <a href="index.html">
+                    <img src="img/img_logo_1.png" alt="logo">
+                </a>
             </h1>
             <div id="menu">
+                <i id="menubtn" class="fas fa-bars fa-3x"></i>
                 <ul>
                     <li>
                         <a id="nav_notice" href="#">공지사항</a>
@@ -29,35 +34,64 @@
                         <a id="nav_type" href="#">Ashley Family</a>
                     </li>
                     <li>
-                        <a id="nav_Store" href="#">Store</a>
+                        <a id="nav_store" href="#">Store</a>
                     </li>
                     <li>
                         <a id="nav_phone" href="#">고객 센터 / 채용 센터</a>
                     </li>
                 </ul>
             </div>
+            <div id="login">
+                <form name="login" action="#" method="get">
+                     <input type="text" name="ID" placeholder="ID">
+                     <input type="password" name="PW" placeholder="Password">
+                     <input type="submit" name="confirm" value="로그인">
+                </form>
+            </div>
         </nav>
     </header>
     <div id="container">
         <div id="main">
-            <div id="event"></div>
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+            </div>
         </div>
         <div id="notice">
-            <div class="content">
-                <div class="number">
-                    <span>3</span>
+            <div>
+                <div class="content">
+                    <div class="number">
+                        <span>3</span>
+                    </div>
+                    <div class="information">
+                        <span></span>
+                    </div>
+                    <div class="img"></div>
                 </div>
-                <div class="information">
-                    <span></span>
-                </div>
-                <div class="img"></div>
             </div>
         </div>
         <div id="type">
-            <div id="classic"></div>
-            <div id="w"></div>
-            <div id="a_lab"></div>
-            <div id="queens"></div>
+            <div id="classic">
+                <div class="type_cover"></div>
+                <div class="type_content">
+                    
+                </div>
+            </div>
+            <div id="w">
+                <div class="type_cover"></div>
+                <div class="type_content"></div>
+            </div>
+            <div id="a_lab">
+                <div class="type_cover"></div>
+                <div class="type_content"></div>
+            </div>
+            <div id="queens">
+                <div class="type_cover"></div>
+                <div class="type_content"></div>
+            </div>
         </div>
         <div id="store">
         </div>
@@ -65,13 +99,19 @@
         </div>
     </div>
     <footer>
+        <p id="copyright">
+            <span>(주) 이랜드파크 | 서울 강남구 압구정로 152 극동스포츠센터 지하 1층</span>
+            <span>대표이사 : 김현수 | 개인정보보호 책임자 : 김현수 | 대표전화 : 1577-1259 | 이메일 : elandfood@eland.co.kr</span>
+            <span>개인정보처리방침 | 영상정보처리기기운영·관리방침 | 서비스 이용약관</span>
+            <span>Copyright©2013 ASHLEY</span>
+        </p>
         <h1>
-            <img src="img/logo.png" alt="logo">
+            <img src="img/img_logo_2.png" alt="logo">
         </h1>
         <div id="sns">
-            <img src="img/blog" alt="blog">
-            <img src="img/Facebook.png" alt="facebook">
-            <img src="img/instagram.png" alt="instagram">
+            <a href="https://blog.naver.com/your_ashley" target="_blank"><img src="img/blog.png" alt="blog"></a>
+            <a href="https://www.facebook.com/wowAshley" target="_blank"><img src="img/Facebook.png" alt="facebook"></a>
+            <a href="https://instagram.com/Your_ashley" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
         </div>
     </footer>
 </body>
