@@ -1,4 +1,6 @@
 $(document).ready(function(){
+//    this 변수화
+    var thisis;
     
 //    header_color
     function header_color(){
@@ -18,12 +20,21 @@ $(document).ready(function(){
         $(".type_cover").css({"width":"25%", "display":"block"});
         $(".type_content").css("display","none");
     }
-var thisis;
+    
+//    type 이동
     function type_btn(){
         $(".type_cover").css("display","none");
         thisis.css({"display":"block", "width":"100%"});
         thisis.fadeOut(2000);
     }
+//    function type_btn(){
+//        $(".type_cover").css("display","none");
+//        this.css({"display":"block", "width":"100%"});
+//        this.fadeOut(2000);
+//    }
+    
+    
+    
     
     
 //    default
@@ -61,6 +72,16 @@ var thisis;
         $("#phone").css("display","block");
     });
     
+//    공지사항
+    
+    $(".fa-minus").css("display","none");
+    $(".detail").css("display","none");
+    $("#notice_1_content").click(function(){
+        $(this).css("height","50px") ? $(this).css("height","500px") : $(this).css("height","50px");
+        $("#notice_1_content .fas").hasClass("fa-plus")? $("#notice_1_content .fas").addClass("fa-minus").removeClass("fa-plus") : $("#notice_1_content .fas").addClass("fa-plus").removeClass("fa-minus");
+        $("#notice_1_content .detail").css("display","none")? $("#notice_1_content .detail").css("display","block") : $("#notice_1_content .detail").css("display","none");
+    });
+    
 //    TYPE_이동
     $("#classic > .type_cover").click(function(){
         thisis= $(this);
@@ -82,4 +103,33 @@ var thisis;
         type_btn()
         $("#queens > .type_content").css("display","block");
     });
+//    $("#classic > .type_cover").click(function(){
+//        type_btn.call(this);
+//        $("#classic > .type_content").css("display","block");
+//    });
+//    $("#w > .type_cover").click(function(){
+//        type_btn.call(this);
+//        $("#w > .type_content").css("display","block");
+//    });
+//    $("#a_lab > .type_cover").click(function(){
+//        type_btn.call(this);
+//        $("#a_lab > .type_content").css("display","block");
+//    });
+//    $("#queens > .type_cover").click(function(){
+//        type_btn.call(this);
+//        $("#queens > .type_content").css("display","block");
+//    });
+    
+//    store
+    function initMap() {
+    var uluru = {lat: 37.253505, lng: 127.108928};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
+    }
 });
