@@ -1,31 +1,22 @@
 $(document).ready(function(){
-    
-//    header_color
-    function header_color(){
-        var src = ($("header h1 img").attr("src") === "img/img_logo_2.png")? "img/img_logo_1.png" : "img/img_logo_2.png";
-        var color = ($("#menubtn").css("color") === "rgb(236, 230, 204)")? "#456200" : "#ece6cc";
-        $("#menubtn").css("color", color);
-        $("header h1 img").attr("src", src);
+
+//    화면크기 마추기
+    var ht = $(window).height()
+    function win_ht(){
+        $("#container > div, #menu > ul, .type_cover").css("height", ht);
     }
-    
+
 //    menu 이동
     function menu_move(){
 //        menu bar
-        header_color()
         $("header ul").fadeOut(300);
         $("#container > div").css("display","none");
 //        type
-        $(".type_cover").css({"width":"25%", "display":"block"});
-        $(".type_content").css("display","none");
-    }
-    
-//    type 이동
-    function type_btn(){
-        $(".type_cover").css("display","none");
-        $(this).css({"display":"block", "width":"100%"});
-        $(this).fadeOut(2000);
-    }
-    
+        $(".type_cover").css({"width":"25%", "display":"block", "cursor":"pointer"});
+        $(".type_content").css({"opacity":"0", "display":"none"});
+        $(".menu_infor").css("display","none");
+        $(".type_infor").css("display","block");
+    }  
     
     
     
@@ -33,18 +24,18 @@ $(document).ready(function(){
 //    default
     $("#container > div").css("display","none");
     $("#main").css("display","block");
-    
-//    화면크기 마추기
-    var ht = $(window).height()
-    $("#container > div, #menu > ul, .type_cover, .type_content").css("height", ht);
+    $(".menu_infor").css("display","none");
+    win_ht()
     
 //    슬라이더
    
 //    메뉴바
     $("#menu ul").hide();
     $("#menubtn").click(function(){
-        header_color()
-        $("#menu ul").slideToggle(300);
+        $("#menu li").css("display","none");
+        $("#menu ul").animate({width:'toggle'},1000, function(){
+            $("#menu li").fadeIn(2000);
+        });
     });
     
 //    메뉴이동
@@ -89,23 +80,58 @@ $(document).ready(function(){
     });
 
 //    TYPE_이동
-    $("#classic > .type_cover").click(function(){
-        type_btn.call(this);
-        $("#classic > .type_content").css("display","block");
-    });
-    $("#w > .type_cover").click(function(){
-        type_btn.call(this);
-        $("#w > .type_content").css("display","block");
-    });
-    $("#a_lab > .type_cover").click(function(){
-        type_btn.call(this);
-        $("#a_lab > .type_content").css("display","block");
-    });
-    $("#queens > .type_cover").click(function(){
-        type_btn.call(this);
-        $("#queens > .type_content").css("display","block");
+    $(".type_cover").click(function(){
+        $(".type_cover").css({"display":"none", "cursor":"auto"});
+        $(this).css("display", "block");
+        $(this).animate({width:"100%"}, 1000, function(){
+            $(this).find(".type_content").css("display","block");
+            $(this).find(".type_content").stop().animate({opacity:1}, 3000);
+        });
     });
     
+//    메뉴이동
+    $(".menu_move_1").click(function(){
+        $(".type_infor").fadeOut(1000, function(){
+            $(".menu_content_1").fadeIn(2000);
+        });
+    });
+    $(".menu_move_2").click(function(){
+        $(".type_infor").fadeOut(1000, function(){
+            $(".menu_content_2").fadeIn(2000);
+        });
+    });
+    $(".menu_move_3").click(function(){
+        $(".type_infor").fadeOut(1000, function(){
+            $(".menu_content_3").fadeIn(2000);
+        });
+    });
+    $(".menu_move_4").click(function(){
+        $(".type_infor").fadeOut(1000, function(){
+            $(".menu_content_4").fadeIn(2000);
+        });
+    });
+    $(".menu_move_5").click(function(){
+        $(".type_infor").fadeOut(1000, function(){
+            $(".menu_content_5").fadeIn(2000);
+        });
+    });
+    $(".menu_move_6").click(function(){
+        $(".type_infor").fadeOut(1000, function(){
+            $(".menu_content_6").fadeIn(2000);
+        });
+    });
+    $(".menu_move_7").click(function(){
+        $(".type_infor").fadeOut(1000, function(){
+            $(".menu_content_7").fadeIn(2000);
+        });
+    });
+    
+//    메뉴뒤로가기
+    $(".menu_content .fas").click(function(){
+        $(".menu_infor").fadeOut(2000, function(){
+            $(".type_infor").fadeIn(2000);
+        });
+    });
 //    store
     function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
