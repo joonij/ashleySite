@@ -92,36 +92,44 @@ $(document).ready(function(){
 //    메뉴이동
     $(".menu_move_1").click(function(){
         $(".type_infor").fadeOut(1000, function(){
+            $(".menu_detail").css("display","none");
+            $(".menu_detail:nth-child(1)").css("display","block");
             $(".menu_content_1").fadeIn(2000);
         });
     });
     $(".menu_move_2").click(function(){
         $(".type_infor").fadeOut(1000, function(){
+            $(".menu_detail").css("display","none");
             $(".menu_content_2").fadeIn(2000);
         });
     });
     $(".menu_move_3").click(function(){
         $(".type_infor").fadeOut(1000, function(){
+            $(".menu_detail").css("display","none");
             $(".menu_content_3").fadeIn(2000);
         });
     });
     $(".menu_move_4").click(function(){
         $(".type_infor").fadeOut(1000, function(){
+            $(".menu_detail").css("display","none");
             $(".menu_content_4").fadeIn(2000);
         });
     });
     $(".menu_move_5").click(function(){
         $(".type_infor").fadeOut(1000, function(){
+            $(".menu_detail").css("display","none");
             $(".menu_content_5").fadeIn(2000);
         });
     });
     $(".menu_move_6").click(function(){
         $(".type_infor").fadeOut(1000, function(){
+            $(".menu_detail").css("display","none");
             $(".menu_content_6").fadeIn(2000);
         });
     });
     $(".menu_move_7").click(function(){
         $(".type_infor").fadeOut(1000, function(){
+            $(".menu_detail").css("display","none");
             $(".menu_content_7").fadeIn(2000);
         });
     });
@@ -132,6 +140,16 @@ $(document).ready(function(){
             $(".type_infor").fadeIn(2000);
         });
     });
+    
+//    메뉴 detail
+//    $(".menu_content:nth-child(1) span").hover(function(){
+//        if($(this).eq(1)){
+//            $(".menu_detail").css("display","block");
+//        } else {
+//            $(".menu_detail").css("display","none");
+//        }
+//    });
+    
 //    store
     function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
