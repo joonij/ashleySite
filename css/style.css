@@ -89,7 +89,7 @@ ul li a {
 }
 #login {
     position: absolute;
-    width: 205px;
+    width: 220px;
     height: 65px;
     top: 0;
     right: 10%;
@@ -107,13 +107,14 @@ ul li a {
     float:left;
     width: 110px;
     height: 25px;
-    background: #ece6cc;
-    border: 1px solid black;
+    margin-left: 10px;
+    background: #fff;
+    border: 1px solid #ece6cc;
     box-sizing: border-box;
 }
 #login input:nth-child(3) {
     position: absolute;
-    right: 20%;
+    right: 25%;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -234,24 +235,25 @@ ul li a {
 #type {
     width: 100%;
 }
-#classic {
-    background: #687f2f;
-}
 .type_cover {
     float: left;
     box-sizing: border-box;
     overflow: hidden;
 }
 #classic .type_cover {
+    position: absolute;
     background: url("../img/type_classic.png") no-repeat 50% 0%;
 }
 #w .type_cover {
+    position: absolute;
     background: url("../img/type_w.png") no-repeat 50% 0%;
 }
 #a_lab .type_cover {
+    position: absolute;
     background: url("../img/type_a_lab.png") no-repeat 50% 0%;
 }
 #queens .type_cover {
+    position: absolute;
     background: url("../img/type_queens.png") no-repeat 50% 0%;
 }
 .type_content {
@@ -269,20 +271,20 @@ ul li a {
 .type_content span {
     display: block;
 }
-#type_content_1 span{
-    font-size: 30px;
+.type_content:nth-child(1) span{
+    font-size: 26px;
     color: #fff;
     letter-spacing: 2px;
     cursor: pointer;
 }
-#type_content_1 span:nth-child(1){
-    margin: 20px 0;
-    font-size: 40px;
+.type_content:nth-child(1) span:nth-child(1){
+    margin: 15px 0;
+    font-size: 30px;
     font-weight: bold;
     cursor: default;
 }
-#type_content_2 span{
-    font-size: 13px;
+.type_content:nth-child(2) span{
+    font-size: 12px;
     text-align: left;
     padding-left: 10%;
 }
@@ -301,7 +303,7 @@ ul li a {
 .menu_content:nth-child(2){
     padding-top: 180px;
 }
-.menu_content .fas {
+.menu_infor .fas {
     position: absolute;
     top: 100px;
     left: 15%;
@@ -316,6 +318,7 @@ ul li a {
 }
 .menu_content:nth-child(1) span {
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .menu_content:nth-child(1) span:nth-child(1){
     margin-bottom: 30px;
@@ -325,14 +328,15 @@ ul li a {
 }
 .menu_detail img{
     position: relative;
-    width: 80%;
-    height: 50%;
+    max-width: 80%;
+    max-height: 50%;
 }
 .menu_detail span {
     position: relative;
-    display: block;
-    margin-top: 50px;
     font-size: 20px;
+}
+.menu_detail span:nth-child(1) {
+    margin-top: 50px;
 }
 .caution {
     position: absolute;
@@ -345,22 +349,72 @@ ul li a {
     text-align: left;
     padding-left: 10%;
 }
+#w .type_content:nth-child(1) span{
+    color: #000;
+}
+#w .menu_infor .fas {
+    color: #000;
+}
+#w .menu_content span {
+    color: #000;
+}
+#a_lab .type_content:nth-child(1) span{
+    color: #000;
+}
+#a_lab .menu_infor .fas {
+    color: #000;
+}
+#a_lab .menu_infor img {
+    position: absolute;
+    max-height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#queens .type_content span{
+    color: #fff;
+}
+
 
 /*store*/
 #store {
     width: 100%;
 }
 #map {
-        height: 400px;
-        width: 100%;
-       }
-
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+#store_btn {
+    position: absolute;
+    width: 250px;
+    top: 100px;
+    right: -30px;
+}
+#store_btn > div {
+    position: relative;
+    width: 220px;
+    height: 50px;
+    right: -50px;
+    margin-top: 20px;
+    border-radius: 25px 0 0 25px;
+    background: #456200;
+    cursor: pointer;
+}
+#store_btn span {
+    display: block;
+    width: 80%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
 
 /*phone*/
 #phone {
     position: fixed;
     width: 100%;
-    background: url(../img/notice_background.jpg) no-repeat;
+    background: url(../img/menubar_img_4.jpg) no-repeat;
     background-size: cover;
 }
 #phone_area{
@@ -370,6 +424,7 @@ ul li a {
     left: 50%;
     transform: translate(-50%, -50%);
     background: #ece6cc;
+    opacity: 0.8;
 }
 .phone_content {
     width: 100%;
@@ -393,9 +448,6 @@ ul li a {
 .phone_content:nth-child(1) div,.phone_content:nth-child(6) div{
     font-size: 20px;
     font-weight: bolder;
-}
-.phone_content:nth-child(6){
-    margin-top: 10px;
 }
 .phone_content .information {
     width: 70%;

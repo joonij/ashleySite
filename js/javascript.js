@@ -9,13 +9,18 @@ $(document).ready(function(){
 //    menu 이동
     function menu_move(){
 //        menu bar
-        $("header ul").fadeOut(300);
+        $("#menu li").fadeOut(500);
+        $("header ul").animate({width:'toggle'},1000);
         $("#container > div").css("display","none");
 //        type
-        $(".type_cover").css({"width":"25%", "display":"block", "cursor":"pointer"});
+        $(".type_cover").css({"width":"25%", "display":"block", "cursor":"pointer", "transform":"none"});
         $(".type_content").css({"opacity":"0", "display":"none"});
         $(".menu_infor").css("display","none");
         $(".type_infor").css("display","block");
+        $("#classic .type_cover").css("left","0");
+        $("#w .type_cover").css("left","25%");
+        $("#a_lab .type_cover").css("left","50%");
+        $("#queens .type_cover").css("left","75%");
     }  
     
     
@@ -27,14 +32,12 @@ $(document).ready(function(){
     $(".menu_infor").css("display","none");
     win_ht()
     
-//    슬라이더
-   
 //    메뉴바
     $("#menu ul").hide();
     $("#menubtn").click(function(){
         $("#menu li").css("display","none");
         $("#menu ul").animate({width:'toggle'},1000, function(){
-            $("#menu li").fadeIn(2000);
+            $("#menu li").fadeIn(1000);
         });
     });
     
@@ -82,10 +85,12 @@ $(document).ready(function(){
 //    TYPE_이동
     $(".type_cover").click(function(){
         $(".type_cover").css({"display":"none", "cursor":"auto"});
-        $(this).css("display", "block");
-        $(this).animate({width:"100%"}, 1000, function(){
-            $(this).find(".type_content").css("display","block");
-            $(this).find(".type_content").stop().animate({opacity:1}, 3000);
+        $(this).css("display","block");
+        $(this).animate({left:"0"}, 1000, function(){
+            $(this).animate({width:"100%"}, 1000, function(){
+                $(this).find(".type_content").css("display","block");
+                $(this).find(".type_content").stop().animate({opacity:1}, 3000);
+            });
         });
     });
     
@@ -93,7 +98,6 @@ $(document).ready(function(){
     $(".menu_move_1").click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
-            $(".menu_detail:nth-child(1)").css("display","block");
             $(".menu_content_1").fadeIn(2000);
         });
     });
@@ -135,31 +139,94 @@ $(document).ready(function(){
     });
     
 //    메뉴뒤로가기
-    $(".menu_content .fas").click(function(){
-        $(".menu_infor").fadeOut(2000, function(){
-            $(".type_infor").fadeIn(2000);
+    $(".menu_infor .fas").click(function(){
+        $(".menu_infor").fadeOut(1000, function(){
+            $(".type_infor").delay(1000).fadeIn(2000);
         });
     });
     
 //    메뉴 detail
-//    $(".menu_content:nth-child(1) span").hover(function(){
-//        if($(this).eq(1)){
-//            $(".menu_detail").css("display","block");
-//        } else {
-//            $(".menu_detail").css("display","none");
-//        }
-//    });
+    $(".menu_content:nth-child(1) span:nth-child(2)").hover(function(){
+        $(".menu_detail:nth-child(1)").css("display","block");
+    },
+    function(){
+        $(".menu_detail:nth-child(1)").css("display","none");
+    });
+    $(".menu_content:nth-child(1) span:nth-child(3)").hover(function(){
+        $(".menu_detail:nth-child(2)").css("display","block");
+    },
+    function(){
+        $(".menu_detail:nth-child(2)").css("display","none");
+    });
+    $(".menu_content:nth-child(1) span:nth-child(4)").hover(function(){
+        $(".menu_detail:nth-child(3)").css("display","block");
+    },
+    function(){
+        $(".menu_detail:nth-child(3)").css("display","none");
+    });
+    $(".menu_content:nth-child(1) span:nth-child(5)").hover(function(){
+        $(".menu_detail:nth-child(4)").css("display","block");
+    },
+    function(){
+        $(".menu_detail:nth-child(4)").css("display","none");
+    });
+    $(".menu_content:nth-child(1) span:nth-child(6)").hover(function(){
+        $(".menu_detail:nth-child(5)").css("display","block");
+    },
+    function(){
+        $(".menu_detail:nth-child(5)").css("display","none");
+    });
+    $(".menu_content:nth-child(1) span:nth-child(7)").hover(function(){
+        $(".menu_detail:nth-child(6)").css("display","block");
+    },
+    function(){
+        $(".menu_detail:nth-child(6)").css("display","none");
+    });
+    $(".menu_content:nth-child(1) span:nth-child(8)").hover(function(){
+        $(".menu_detail:nth-child(7)").css("display","block");
+    },
+    function(){
+        $(".menu_detail:nth-child(7)").css("display","none");
+    });
+    $(".menu_content:nth-child(1) span:nth-child(9)").hover(function(){
+        $(".menu_detail:nth-child(8)").css("display","block");
+    },
+    function(){
+        $(".menu_detail:nth-child(8)").css("display","none");
+    });
+    $(".menu_content:nth-child(1) span:nth-child(10)").hover(function(){
+        $(".menu_detail:nth-child(9)").css("display","block");
+    },
+    function(){
+        $(".menu_detail:nth-child(9)").css("display","none");
+    });
+    $(".menu_content:nth-child(1) span:nth-child(11)").hover(function(){
+        $(".menu_detail:nth-child(10)").css("display","block");
+    },
+    function(){
+        $(".menu_detail:nth-child(10)").css("display","none");
+    });
+    $(".menu_content:nth-child(1) span:nth-child(12)").hover(function(){
+        $(".menu_detail:nth-child(11)").css("display","block");
+    },
+    function(){
+        $(".menu_detail:nth-child(11)").css("display","none");
+    });
     
 //    store
-    function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
+    var start = {lat: 37.511303, lng: 127.098157};
+    var uluru = {lat: 37.511303, lng: 127.098157};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: start
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+    
+    $("#store_btn div").click(function(){
+        $("#store_btn div").animate({right:"-50px"}, 100);
+        $(this).animate({right:"0px"}, 100);
+    });
 });
