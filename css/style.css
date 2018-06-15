@@ -379,6 +379,7 @@ ul li a {
 /*store*/
 #store {
     width: 100%;
+    overflow: hidden;
 }
 #map {
     width: 100%;
@@ -389,11 +390,12 @@ ul li a {
     position: absolute;
     width: 250px;
     top: 100px;
-    right: -30px;
+    right: 0;
+    overflow: hidden;
 }
 #store_btn > div {
     position: relative;
-    width: 220px;
+    width: 300px;
     height: 50px;
     right: -50px;
     margin-top: 20px;
@@ -407,6 +409,7 @@ ul li a {
     height: 100%;
     font-size: 30px;
     font-weight: bold;
+    color: #ece6cc;
     text-align: center;
 }
 
