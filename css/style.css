@@ -1,3 +1,4 @@
+
 /*header*/
 header {
     position: fixed;
@@ -170,6 +171,7 @@ ul li a {
 .notice_area{
     position: relative;
     width: 60%;
+    height: 70%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -242,19 +244,19 @@ ul li a {
 }
 #classic .type_cover {
     position: absolute;
-    background: url("../img/type_classic.png") no-repeat 50% 0%;
+    background: url("../img/type_classic.png") no-repeat 50% 40%;
 }
 #w .type_cover {
     position: absolute;
-    background: url("../img/type_w.png") no-repeat 50% 0%;
+    background: url("../img/type_w.png") no-repeat 50% 40%;
 }
 #a_lab .type_cover {
     position: absolute;
-    background: url("../img/type_a_lab.png") no-repeat 50% 0%;
+    background: url("../img/type_a_lab.png") no-repeat 50% 40%;
 }
 #queens .type_cover {
     position: absolute;
-    background: url("../img/type_queens.png") no-repeat 50% 0%;
+    background: url("../img/type_queens.png") no-repeat 50% 40%;
 }
 .type_content {
     position: relative;
@@ -266,7 +268,7 @@ ul li a {
 }
 .type_content img {
     position: relative;
-    width: 80%;
+    width: 75%;
 }
 .type_content span {
     display: block;
@@ -326,10 +328,14 @@ ul li a {
     font-weight: bold;
     cursor: default;
 }
+.menu_detail {
+    position: relative;
+    width: 80%;
+    height: 60%;
+}
 .menu_detail img{
     position: relative;
-    max-width: 80%;
-    max-height: 50%;
+    height: 80%;
 }
 .menu_detail span {
     position: relative;
@@ -341,7 +347,7 @@ ul li a {
 .caution {
     position: absolute;
     width: 80%;
-    bottom: 350px;
+    bottom: 300px;
 }
 .caution span {
     display: block;

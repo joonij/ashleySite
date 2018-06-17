@@ -77,7 +77,7 @@ $(document).ready(function(){
         $(".notice_content").css("height","50px");
         $(".notice_content .fas").addClass("fa-plus").removeClass("fa-minus");
         $(".notice_content .detail").css("display","none");
-        ($(this).css("height") === "50px") ? $(this).css("height","550px") : $(this).css("height","50px");
+        ($(this).css("height") === "50px") ? $(this).css("height","70%") : $(this).css("height","50px");
         $(this).find(".fas").hasClass("fa-plus") ? $(this).find(".fas").addClass("fa-minus").removeClass("fa-plus") : $(this).find(".fas").addClass("fa-plus").removeClass("fa-minus");
         ($(this).find(".detail").css("display") === "none")? $(this).find(".detail").css("display","block") : $(this).find(".detail").css("display","none");
     });
@@ -98,50 +98,50 @@ $(document).ready(function(){
     $(".menu_move_1").click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
-            $(".menu_content_1").fadeIn(2000);
+            $(".menu_content_1").fadeIn(1000);
         });
     });
     $(".menu_move_2").click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
-            $(".menu_content_2").fadeIn(2000);
+            $(".menu_content_2").fadeIn(1000);
         });
     });
     $(".menu_move_3").click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
-            $(".menu_content_3").fadeIn(2000);
+            $(".menu_content_3").fadeIn(1000);
         });
     });
     $(".menu_move_4").click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
-            $(".menu_content_4").fadeIn(2000);
+            $(".menu_content_4").fadeIn(1000);
         });
     });
     $(".menu_move_5").click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
-            $(".menu_content_5").fadeIn(2000);
+            $(".menu_content_5").fadeIn(1000);
         });
     });
     $(".menu_move_6").click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
-            $(".menu_content_6").fadeIn(2000);
+            $(".menu_content_6").fadeIn(1000);
         });
     });
     $(".menu_move_7").click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
-            $(".menu_content_7").fadeIn(2000);
+            $(".menu_content_7").fadeIn(1000);
         });
     });
     
 //    메뉴뒤로가기
     $(".menu_infor .fas").click(function(){
         $(".menu_infor").fadeOut(1000, function(){
-            $(".type_infor").delay(1000).fadeIn(2000);
+            $(".type_infor").delay(1000).fadeIn(1000);
         });
     });
     
