@@ -95,46 +95,52 @@ $(document).ready(function(){
     });
     
 //    메뉴이동
-    $(".menu_move_1").click(function(){
+    $(".menu_move_1").stop().click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
             $(".menu_content_1").fadeIn(1000);
         });
     });
-    $(".menu_move_2").click(function(){
+    $(".menu_move_2").stop().click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
             $(".menu_content_2").fadeIn(1000);
         });
     });
-    $(".menu_move_3").click(function(){
+    $(".menu_move_3").stop().click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
             $(".menu_content_3").fadeIn(1000);
         });
     });
-    $(".menu_move_4").click(function(){
+    $(".menu_move_4").stop().click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
             $(".menu_content_4").fadeIn(1000);
         });
     });
-    $(".menu_move_5").click(function(){
+    $(".menu_move_5").stop().click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
             $(".menu_content_5").fadeIn(1000);
         });
     });
-    $(".menu_move_6").click(function(){
+    $(".menu_move_6").stop().click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
             $(".menu_content_6").fadeIn(1000);
         });
     });
-    $(".menu_move_7").click(function(){
+    $(".menu_move_7").stop().click(function(){
         $(".type_infor").fadeOut(1000, function(){
             $(".menu_detail").css("display","none");
             $(".menu_content_7").fadeIn(1000);
+        });
+    });
+    $(".menu_move_8").stop().click(function(){
+        $(".type_infor").fadeOut(1000, function(){
+            $(".menu_detail").css("display","none");
+            $(".menu_content_8").fadeIn(1000);
         });
     });
     
@@ -214,19 +220,57 @@ $(document).ready(function(){
     });
     
 //    store
-    var start = {lat: 37.511303, lng: 127.098157};
-    var uluru = {lat: 37.511303, lng: 127.098157};
+    
+    //    지도
+    var start = {lat: 37.566645, lng: 126.978371};
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 10,
-      center: start
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
+        zoom: 11,
+        center: start
     });
     
+    //    버튼
+    var locations = '';
     $("#store_btn div").click(function(){
+        var locations = null;
+        var locations = [];
+        var locations = '';
         $("#store_btn div").animate({right:"-50px"}, 100);
-        $(this).animate({right:"0px"}, 100);
+        $(this).animate({right:"0px"}, 100, function location(){
+            if ($(this).index() === 0) {
+                locations  = [
+                    ['classic_4', 37.664846, 127.043596, 4],
+                    ['classic_3', 37.451964, 126.900737, 3],
+                    ['classic_2', 37.509588, 126.887553, 2],
+                    ['classic_1', 37.639825, 127.068618, 1],
+                ];
+            } else if ($(this).index() === 1){
+                 locations  = [
+                    ['w_6', 37.559955, 126.840502, 6],
+                    ['w_5', 37.535214, 127.095767, 5],
+                    ['w_4', 37.509271, 127.007485, 4],
+                    ['w_3', 37.498131, 127.026428, 3],
+                    ['w_2', 37.482090, 126.881627, 2],
+                    ['w_1', 37.477736, 127.124954, 1],
+                ];
+            } else if ($(this).index() === 2){
+                 locations = [
+                    ['a_lab_1', 37.556232, 126.934529, 1]
+                ];
+            } else if ($(this).index() === 3){
+                 locations = [
+                    ['queens_2', 37.511158, 127.098135, 2],
+                    ['queens_1', 35.157189, 129.063093, 1]
+                ]; 
+            }
+            for (i = 0; i < locations.length; i++) {  
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map,
+                    data: {
+                        name: locations[i][0]
+                    }
+                });
+            }
+        });
     });
 });

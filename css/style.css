@@ -483,6 +483,7 @@ footer {
     width: 500px;
     left: 5%;
     transform: translateY(-50%);
+    color: #ece6cc;
 }
 footer span {
     display: block;
