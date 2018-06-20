@@ -4,6 +4,7 @@ $(document).ready(function(){
     var ht = $(window).height()
     $("#container > div, #menu > ul, .type_cover").css("height", ht);
     $("#container > div").css("display","none");
+    
 //    main
     $("#main").css("display","block");
     $(".menu_infor").css("display","none");
@@ -18,8 +19,23 @@ $(document).ready(function(){
         });
     });
     
+//    로그인
+    $("#login form").css("display", "none");
+    $("#member > div").one("click", function(){
+        if($(this).index() === 0){
+            $("#member > div").fadeOut(1000, function(){
+                $("#login, #login form").fadeIn(1000);
+                $("#login span").css("display", "none");
+                $("#login").css({"width":"100%", "margin-top":"0"});
+            });
+        } else if($(this).index() === 1){
+            $("#membership").css("display", "none");
+            $("#login span").css("display", "none");
+        }
+    });
+    
 //    메뉴이동
-    function menu_move(){
+    function menu_move(){ 
 //        menu bar
         $("#menu li").fadeOut(500);
         $("header ul").animate({width:'toggle'},1000);
@@ -54,21 +70,11 @@ $(document).ready(function(){
 //    공지사항
     $(".fa-minus").css("display","none");
     $(".detail").css("display","none");
-    $(".notice_area").css("display","none");
-    $(".notice_area:nth-child(1)").css("display","block");
-    $(".page_num i").click(function(){
-        $(".notice_area").css("display","none");
-        if($(this).hasClass("fa-long-arrow-alt-left")) {
-            $(".notice_area").prev().css("display","block");
-        } else {
-            $(".notice_area").next().css("display","block");
-        }
-    });
     $(".notice_content").click(function(){
         $(".notice_content").css("height","50px");
         $(".notice_content .fas").addClass("fa-plus").removeClass("fa-minus");
         $(".notice_content .detail").css("display","none");
-        ($(this).css("height") === "50px") ? $(this).css("height","77.5%") : $(this).css("height","50px");
+        ($(this).css("height") === "50px") ? $(this).css("height","100%") : $(this).css("height","50px");
         $(this).find(".fas").hasClass("fa-plus") ? $(this).find(".fas").addClass("fa-minus").removeClass("fa-plus") : $(this).find(".fas").addClass("fa-plus").removeClass("fa-minus");
         ($(this).find(".detail").css("display") === "none")? $(this).find(".detail").css("display","block") : $(this).find(".detail").css("display","none");
     });
