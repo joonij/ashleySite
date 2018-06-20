@@ -68,7 +68,7 @@ $(document).ready(function(){
         $(".notice_content").css("height","50px");
         $(".notice_content .fas").addClass("fa-plus").removeClass("fa-minus");
         $(".notice_content .detail").css("display","none");
-        ($(this).css("height") === "50px") ? $(this).css("height","70%") : $(this).css("height","50px");
+        ($(this).css("height") === "50px") ? $(this).css("height","77.5%") : $(this).css("height","50px");
         $(this).find(".fas").hasClass("fa-plus") ? $(this).find(".fas").addClass("fa-minus").removeClass("fa-plus") : $(this).find(".fas").addClass("fa-plus").removeClass("fa-minus");
         ($(this).find(".detail").css("display") === "none")? $(this).find(".detail").css("display","block") : $(this).find(".detail").css("display","none");
     });
@@ -86,7 +86,7 @@ $(document).ready(function(){
     });
     
 //    메뉴이동
-    $(".type_content span").click(function(){
+    $(".type_content:nth-child(1) span").not($(".type_content:nth-child(1) span:nth-child(1)")).click(function(){
             if($(this).index() === 1){
                 $(".menu_content_1").delay(500).fadeIn(1000);
             } else if ($(this).index() === 2) {
