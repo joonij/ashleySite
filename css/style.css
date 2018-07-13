@@ -46,7 +46,7 @@ header h1 img {
 header ul {
     position: absolute;
     width: 100%;
-    background:rgba(69,98,0);
+    background:rgb(69,98,0);
 }
 ul li {
     position: absolute;
