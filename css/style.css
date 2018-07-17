@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
 /*header*/
 header {
     position: fixed;
@@ -10,10 +12,11 @@ header {
 header h1 {
     position: absolute;
     height: 80px;
+    width: 230px;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 25px 25px;
     background: #456200;
     z-index: 100;
 }
@@ -21,7 +24,8 @@ header h1 img {
     position: relative;
     height: 45px;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #menu {
     position: absolute;
@@ -84,6 +88,7 @@ ul li a {
     height: 100%;
     font-size: 50px;
     font-weight: bolder;
+    font-family: 'Nanum Gothic', sans-serif;
     color: #fff;
     background: rgba(0,0,0,0.5);
 }
@@ -93,7 +98,7 @@ ul li a {
     height: 65px;
     top: 0;
     right: 10%;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 25px 25px;
     background: #456200;
     z-index: 100;
 }
@@ -132,7 +137,7 @@ ul li a {
     text-align: center;
 }
 #login input:nth-child(2) {
-    border-radius: 0 0 0 25px;
+    border-radius: 0 0 0 15px;
 }
 #login input:nth-child(3) {
     position: absolute;
@@ -140,7 +145,7 @@ ul li a {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    border-radius: 0 0 25px 0;
+    border-radius: 0 0 15px 0;
 }
 
 
