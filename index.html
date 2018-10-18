@@ -1,931 +1,1129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>애슐리</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="js/javascript.js"></script>
-    
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1>
-                <a href="index.html">
-                    <img src="img/img_logo.png" alt="logo">
-                </a>
-            </h1>
-            <div id="menu">
-                <i id="menubtn" class="fas fa-bars fa-2x"></i>
-                <ul>
-                    <li id="nav_notice">
-                        <a href="#">공지사항</a>
+    <header class="header">
+        <h1 class="logo">
+            <a class="home_link" href="index.html">
+                <img src="img/img_logo.png" alt="로고">
+            </a>
+        </h1>
+        <nav class="nav">
+            <button class="menu_bar" type="button"></button>
+            <div class="pop_up_menu">
+                <ul class="menu">
+                    <li class="menu_item" id="nav_home">
+                        <button type="button">HOME</button>
                     </li>
-                    <li id="nav_type">
-                        <a href="#">Ashley Family</a>
+                    <li class="menu_item" id="nav_notice">
+                        <button type="button">공지사항</button>
                     </li>
-                    <li id="nav_store">
-                        <a href="#">Store</a>
+                    <li class="menu_item" id="nav_type">
+                        <button type="button">Ashley Family</button>
                     </li>
-                    <li id="nav_phone">
-                        <a href="#">고객 센터 / 채용 센터</a>
+                    <li class="menu_item" id="nav_store">
+                        <button type="button">Store</button>
+                    </li>
+                    <li class="menu_item" id="nav_phone">
+                        <button type="button">고객 센터 / 채용 센터</button>
                     </li>
                 </ul>
             </div>
-            <div id="member">
-                <div id="login">
-                    <span>로그인</span>
-                    <form name="login" action="#" method="get">
-                         <input type="text" name="ID" placeholder="ID">
-                         <input type="password" name="PW" placeholder="Password">
-                         <input type="submit" name="confirm" value="로그인">
-                    </form>
-                </div>
-                <div id="membership">
-                    <span>회원가입</span>
-                </div>
-            </div>
         </nav>
     </header>
-    <div id="container">
-        <div id="main">
+    <section class="container">
+        <h2 class="blind">content</h2>
+        <article class="main">
+            <h3 class="blind">main</h3>
             <div class="carousel" data-flickity='{ "autoPlay": 3000, "wrapAround": true }'>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
-                <div class="carousel-cell"></div>
+                <div class="carousel-cell">
+                    <button class="w_benner" type="button">자세히보기</button>
+                </div>
+                <div class="carousel-cell">
+                    <button class="w_benner" type="button">자세히보기</button>
+                </div>
+                <div class="carousel-cell">
+                    <button class="w_benner" type="button">자세히보기</button>
+                </div>
+                <div class="carousel-cell">
+                    <button class="classic_benner" type="button">자세히보기</button>
+                </div>
+                <div class="carousel-cell">
+                    <button class="classic_benner" type="button">자세히보기</button>
+                </div>
             </div>
-        </div>
-        <div id="notice">
-            <div class="notice_area">
-               <div class="notice_content">
-                    <div class="number">
+        </article>
+        <article class="notice">
+            <h3 class="blind">notice</h3>
+            <div class="screen">
+                <div class="notice_detail">
+                    <img src="img/notice_%202018-06-12.jpg" alt="투표인증하고 할인받자">
+                </div>
+                <div class="notice_detail">
+                    <img src="img/notice_%202018-06-11.jpg" alt="6월 13일 샐러드바 가격 안내">
+                </div>
+                <div class="notice_detail">
+                    <img src="img/notice_%202018-06-04.jpg" alt="6월 영업종료 매장 안내">
+                </div>
+                <div class="notice_detail">
+                    <img src="img/notice_%202018-05-30.jpg" alt="부천뉴코아점에서 애슐리W 신메뉴를 만나보세요">
+                </div>
+                <div class="notice_detail">
+                    <img src="img/notice_%202018-05-23.jpg" alt="부천뉴코아점에서 애슐리W 신메뉴를 만나보세요">
+                </div>
+                <div class="notice_detail">
+                    <img src="img/notice_%202018-05-09.jpg" alt="5월 영업종료 안내">
+                </div>
+            </div>
+            <ul class="notice_area">
+               <li class="notice_content">
+                    <div class="notice_item number">
                         <span>6</span>
                     </div>
-                    <div class="information">
-                        <span>[이벤트] 6월13일 딱 하루, 투표인증하고 할인받자! (애슐리W)</span>
+                    <div class="notice_item information">
+                        <p>[이벤트] 6월13일 딱 하루, 투표인증하고 할인받자! (애슐리W)</p>
                     </div>
-                    <div class="date">
-                        <span>2018-06-12</span>
+                    <div class="notice_item date">
+                        <p>2018-06-12</p>
                     </div>
-                    <div class="more">
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="detail">
-                        <img src="img/notice_%202018-06-12.jpg" alt="detail">
-                    </div>
-                </div>
-                <div class="notice_content">
-                    <div class="number">
+                </li>
+                <li class="notice_content">
+                    <div class="notice_item number">
                         <span>5</span>
                     </div>
-                    <div class="information">
-                        <span>[이용안내] 6월 13일(수) 법정공휴일 샐러드바 가격 안내 (전국지방선거일)</span>
+                    <div class="notice_item information">
+                        <p>[이용안내] 6월 13일(수) 법정공휴일 샐러드바 가격 안내 (전국지방선거일)</p>
                     </div>
-                    <div class="date">
-                        <span>2018-06-11</span>
+                    <div class="notice_item date">
+                        <p>2018-06-11</p>
                     </div>
-                    <div class="more">
-                        <i class="fas fa-plus"></i>
-                        <i class="fas fa-minus"></i>
-                    </div>
-                    <div class="detail">
-                        <img src="img/notice_%202018-06-11.jpg" alt="detail">
-                    </div>
-                </div>
-                <div class="notice_content">
-                    <div class="number">
+                </li>
+                <li class="notice_content">
+                    <div class="notice_item number">
                         <span>4</span>
                     </div>
-                    <div class="information">
-                        <span>[영업종료안내] 애슐리 6월 영업종료 매장 안내</span>
+                    <div class="notice_item information">
+                        <p>[영업종료안내] 애슐리 6월 영업종료 매장 안내</p>
                     </div>
-                    <div class="date">
-                        <span>2018-06-04</span>
+                    <div class="notice_item date">
+                        <p>2018-06-04</p>
                     </div>
-                    <div class="more">
-                        <i class="fas fa-plus"></i>
-                        <i class="fas fa-minus"></i>
-                    </div>
-                    <div class="detail">
-                        <img src="img/notice_%202018-06-04.jpg" alt="detail">
-                    </div>
-                </div>
-                <div class="notice_content">
-                    <div class="number">
+                </li>
+                <li class="notice_content">
+                    <div class="notice_item number">
                         <span>3</span>
                     </div>
-                    <div class="information">
-                        <span>[공지] 부천뉴코아점에서 애슐리W 신메뉴를 가장 먼저 만나보세요! (5/31)</span>
+                    <div class="notice_item information">
+                        <p>[공지] 부천뉴코아점에서 애슐리W 신메뉴를 가장 먼저 만나보세요! (5/31)</p>
                     </div>
-                    <div class="date">
-                        <span>2018-05-30</span>
+                    <div class="notice_item date">
+                        <p>2018-05-30</p>
                     </div>
-                    <div class="more">
-                        <i class="fas fa-plus"></i>
-                        <i class="fas fa-minus"></i>
-                    </div>
-                    <div class="detail">
-                        <img src="img/notice_%202018-05-30.jpg" alt="detail">
-                    </div>
-                </div>
-                <div class="notice_content">
-                    <div class="number">
+                </li>
+                <li class="notice_content">
+                    <div class="notice_item number">
                         <span>2</span>
                     </div>
-                    <div class="information">
-                        <span>[공지] 부천뉴코아점에서 애슐리W 신메뉴를 미리 만나보세요!</span>
+                    <div class="notice_item information">
+                        <p>[공지] 부천뉴코아점에서 애슐리W 신메뉴를 미리 만나보세요!</p>
                     </div>
-                    <div class="date">
-                        <span>2018-05-23</span>
+                    <div class="notice_item date">
+                        <p>2018-05-23</p>
                     </div>
-                    <div class="more">
-                        <i class="fas fa-plus"></i>
-                        <i class="fas fa-minus"></i>
-                    </div>
-                    <div class="detail">
-                        <img src="img/notice_%202018-05-23.jpg" alt="detail">
-                    </div>
-                </div>
-                <div class="notice_content">
-                    <div class="number">
+                </li>
+                <li class="notice_content">
+                    <div class="notice_item number">
                         <span>1</span>
                     </div>
-                    <div class="information">
-                        <span>[영업종료안내] 애슐리 5월 영업종료 안내</span>
+                    <div class="notice_item information">
+                        <p>[영업종료안내] 애슐리 5월 영업종료 안내</p>
                     </div>
-                    <div class="date">
-                        <span>2018-05-09</span>
+                    <div class="notice_item date">
+                        <p>2018-05-09</p>
                     </div>
-                    <div class="more">
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="detail">
-                        <img src="img/notice_%202018-05-09.jpg" alt="detail">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="type">
-            <div id="classic">
-                <div class="type_cover">
+                </li>
+            </ul>
+        </article>
+        <article class="type">
+            <h3 class="blind">type</h3>
+            <ul class="type_cover">
+                <li class="cover classic_cover">
+                    <button type="button">classic</button>
+                </li>
+                <li class="cover w_cover">
+                    <button type="button">w</button>
+                </li>
+                <li class="cover a_lab_cover">
+                    <button type="button">a lab</button>
+                </li>
+                <li class="cover queens_cover">
+                    <button type="button">queens</button>
+                </li>
+            </ul>
+            <div class="type_store">
+                <div class="classic">
                     <div class="type_infor">
-                        <div class="type_content">
-                            <img src="img/type_classic_img_1.jpg" alt="classic_img_1">
-                            <p>
-                                <span>MENU INFO</span>
-                                <span class="menu_move_1">SEASON SPECIAL Line</span>
-                                <span class="menu_move_2">HOT Line</span>
-                                <span class="menu_move_3">COLD Line</span>
-                                <span class="menu_move_4">VIETNAM Food Line</span>
-                                <span class="menu_move_5">DESSERT Line</span>
-                                <span class="menu_move_6">TAKE OUT</span>
-                                <span class="menu_move_7">DRINK &amp; WINE</span>
-                            </p>
+                        <div class="type_menu">
+                            <button type="button">뒤로가기</button>
+                            <dl class="type_menu_list">
+                                <dt class="type_menu_name"><strong>MENU INFO</strong></dt>
+                                <dd class="type_menu_item">
+                                    <button type="button">SEASON SPECIAL Line</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">HOT Line</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">COLD Line</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">VIETNAM Food Line</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">DESSERT Line</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">TAKE OUT</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">DRINK &amp; WINE</button>
+                                </dd>
+                            </dl>
                         </div>
-                        <div class="type_content">
-                            <img src="img/type_classic_img_2.png" alt="classic_img_2">
-                            <p>
-                                <span>* 신속한 안내와 함께 많은 고객님께 애슐리를 이용할 수 있는 ‘2시간 만찬 이용제’를 진행하고 있습니다.</span>
-                                <span>* 샐러드바 음식은 포장이 되지 않습니다.</span>
-                                <span>* 미취학아동, 초등학생, 성인 요금 적용은 당 해 년도 나이 기준이 아닌 취학을 기준으로 적용됩니다.</span>
-                                <span>* 3월 초등학교 입학예정인 미취학아동 → 초등학교 입학 후부터 초등학생 요금 적용됩니다.</span>
-                                <span>* 만 7세 이상도 취학 전이면 미취학 아동 요금 적용됩니다.</span>
-                                <span>* 3월 중학교 입학 예정인 초등학생 → 중학교 입학 후부터 성인 요금 적용됩니다.</span>
-                                <span>* 36개월 미만 어린이는 샐러드바 무료이며, 동반 2인까지 가능합니다.</span>
-                                <span>* 각 매장에 따라 주말 가격이 상이할 수 있으니 매장 정보검색 후 이용해주십시오. </span>
-                                <span>* 36개월 미만, 미취학 아동, 초등학생의 경우에 등본, 건강보험증(사본) 등 증빙자료를 요청드릴 수 있습니다.</span>
+                        <div class="type_price">
+                            <img src="img/type_classic_img_2.png" alt="classic price list">
+                            <p class="type_price_client">
+                                * 신속한 안내와 함께 많은 고객님께 애슐리를 이용할 수 있는 ‘2시간 만찬 이용제’를 진행하고 있습니다.<br />
+                                * 샐러드바 음식은 포장이 되지 않습니다.<br />
+                                * 미취학아동, 초등학생, 성인 요금 적용은 당 해 년도 나이 기준이 아닌 취학을 기준으로 적용됩니다.<br />
+                                * 3월 초등학교 입학예정인 미취학아동 → 초등학교 입학 후부터 초등학생 요금 적용됩니다.<br />
+                                * 만 7세 이상도 취학 전이면 미취학 아동 요금 적용됩니다.<br />
+                                * 3월 중학교 입학 예정인 초등학생 → 중학교 입학 후부터 성인 요금 적용됩니다.<br />
+                                * 36개월 미만 어린이는 샐러드바 무료이며, 동반 2인까지 가능합니다.<br />
+                                * 각 매장에 따라 주말 가격이 상이할 수 있으니 매장 정보검색 후 이용해주십시오. <br />
+                                * 36개월 미만, 미취학 아동, 초등학생의 경우에 등본, 건강보험증(사본) 등 증빙자료를 요청드릴 수 있습니다.<br />
                             </p>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_1">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>SEASON SPECIAL Line</span>
-                                <span>칠리 크랩 &amp; 스틱</span>
-                                <span>게살 마요 피자 토스트</span>
-                                <span>팟타이 파스타</span>
-                                <span>쏘이 갈비국수</span>
-                                <span>일로일로 파인망고 케이크</span>
-                                <span>펑리 초코 퐁듀</span>
-                                <span>핫떡 맵떡</span>
-                                <span>밤도깨비 파스타라면</span>
-                                <span>츄러스에 바나나?</span>
-                                <span>망고탱고 에이드</span>
-                                <span>스린 망고젤리</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>SEASON SPECIAL Line</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">칠리 크랩 &amp; 스틱</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">게살 마요 피자 토스트</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">팟타이 파스타</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">쏘이 갈비국수</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">일로일로 파인망고 케이크</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">펑리 초코 퐁듀</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">핫떡 맵떡</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">밤도깨비 파스타라면</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">츄러스에 바나나?</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">망고탱고 에이드</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">스린 망고젤리</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/classic_season_img01.jpg" alt="season_img01">
-                                <span>바삭하게 튀긴 크랩과 게맛살을 매콤 칠리소스에 볶아낸 요리</span>
+                                <img src="img/classic_season_img01.jpg" alt="칠리 크랩 스틱">
+                                <p class="menu_detail_content">바삭하게 튀긴 크랩과 게맛살을 매콤 칠리소스에 볶아낸 요리</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img02.jpg" alt="season_img02">
-                                <span>식빵에 게맛살셀러드을 올려 구운 나이트마켓 스타일 피자</span>
+                                <img src="img/classic_season_img02.jpg" alt="게살 마요 피자 토스트">
+                                <p>식빵에 게맛살셀러드을 올려 구운 나이트마켓 스타일 피자</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img03.jpg" alt="season_img03">
-                                <span>정통 소스에 고추기름을 더해 볶아낸 이색 팟타이</span>
+                                <img src="img/classic_season_img03.jpg" alt="팟타이 파스타">
+                                <p>정통 소스에 고추기름을 더해 볶아낸 이색 팟타이</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img04.jpg" alt="season_img04">
-                                <span>갈비양념 돼지고기, 숙주를 듬뿍 얹어 먹는 태국식 쌀국수</span>
+                                <img src="img/classic_season_img04.jpg" alt="쏘이 갈비 국수">
+                                <p>갈비양념 돼지고기, 숙주를 듬뿍 얹어 먹는 태국식 쌀국수</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img05.jpg" alt="season_img05">
-                                <span>촉촉한 초코시트에 딸기 생크림을 덮은 달콤한 디저트</span>
+                                <img src="img/classic_season_img05.jpg" alt="일로일로 파인망고 케이크">
+                                <p>촉촉한 초코시트에 딸기 생크림을 덮은 달콤한 디저트</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img06.jpg" alt="season_img06">
-                                <span>새콤달콤 파인애플을 초코시럽에 찍어 먹는 디저트</span>
+                                <img src="img/classic_season_img06.jpg" alt="펑리 초코 퐁듀">
+                                <p>새콤달콤 파인애플을 초코시럽에 찍어 먹는 디저트</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img07.jpg" alt="season_img07">
-                                <span>매운 떡볶이 양념에 핫도그가 버무려진 이색메뉴</span>
+                                <img src="img/classic_season_img07.jpg" alt="핫떡 맵떡">
+                                <p>매운 떡볶이 양념에 핫도그가 버무려진 이색메뉴</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img08.jpg" alt="season_img08">
-                                <span>매콤한 라면양념와 시원한 육수가 어우러진 퓨전파스타</span>
+                                <img src="img/classic_season_img08.jpg" alt="밤도깨비 파스타라면">
+                                <p>매콤한 라면양념와 시원한 육수가 어우러진 퓨전파스타</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img09.jpg" alt="season_img09">
-                                <span>바나나, 바나나크림을 채운 케이크에 츄러스를 꽂은 이색디저트</span>
+                                <img src="img/classic_season_img09.jpg" alt="츄러스에 바나나">
+                                <p>바나나, 바나나크림을 채운 케이크에 츄러스를 꽂은 이색디저트</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img10.jpg" alt="season_img10">
-                                <span>달달한 망고시럽과 톡 쏘는 스파클링의 만남</span>
+                                <img src="img/classic_season_img10.jpg" alt="망고탱고 에이드">
+                                <p>달달한 망고시럽과 톡 쏘는 스파클링의 만남</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img11.jpg" alt="season_img11">
-                                <span>달콤 망고, 향근 복숭아맛의 타이완 야시장 명물 디저트</span>
+                                <img src="img/classic_season_img11.jpg" alt="스린 망고젤리">
+                                <p>달콤 망고, 향근 복숭아맛의 타이완 야시장 명물 디저트</p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_2">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>HOT Line</span>
-                                <span>칠리 크랩 &amp; 스틱</span>
-                                <span>게살 마요 피자 토스트</span>
-                                <span>팟타이 파스타</span>
-                                <span>게살 볶음밥</span>
-                                <span>트리플 가라아게</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>HOT Line</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">칠리 크랩 &amp; 스틱</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">게살 마요 피자 토스트</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">팟타이 파스타</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">게살 볶음밥</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">트리플 가라아게</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/classic_season_img01.jpg" alt="hot_img01">
-                                <span>바삭하게 튀긴 크랩과 게맛살을 매콤 칠리소스에 볶아낸 요리</span>
+                                <img src="img/classic_season_img01.jpg" alt="칠리 크랩 스틱">
+                                <p class="menu_detail_content">바삭하게 튀긴 크랩과 게맛살을 매콤 칠리소스에 볶아낸 요리</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img02.jpg" alt="hot_img02">
-                                <span>식빵에 게맛살셀러드을 올려 구운 나이트마켓 스타일 피자</span>
+                                <img src="img/classic_season_img02.jpg" alt="게살 마요 피자 토스트">
+                                <p class="menu_detail_content">식빵에 게맛살셀러드을 올려 구운 나이트마켓 스타일 피자</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img03.jpg" alt="hot_img03">
-                                <span>정통 소스에 고추기름을 더해 볶아낸 이색 팟타이</span>
+                                <img src="img/classic_season_img03.jpg" alt="팟타이 파스타">
+                                <p class="menu_detail_content">정통 소스에 고추기름을 더해 볶아낸 이색 팟타이</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_hot_img04.jpg" alt="hot_img04">
-                                <span>쫀득하게 씹히는 게살과 몽글몽글한 스크램블 에그를 곁들인</span>
-                                <span>오리엔탈 게살 볶음밥 아이들에게 인기 만점이에요!</span>
+                                <img src="img/classic_hot_img04.jpg" alt="게살 볶음밥">
+                                <p class="menu_detail_content">
+                                    쫀득하게 씹히는 게살과 몽글몽글한 스크램블 에그를 곁들인<br />
+                                    오리엔탈 게살 볶음밥 아이들에게 인기 만점이에요!
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_hot_img05.jpg" alt="hot_img05">
-                                <span>바삭하게 튀긴 통살치킨, 떡, 포토이토를 달콤하게 덤블링</span>
+                                <img src="img/classic_hot_img05.jpg" alt="트리플 가라아게">
+                                <p class="menu_detail_content">바삭하게 튀긴 통살치킨, 떡, 포토이토를 달콤하게 덤블링</p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_3">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>COLD Line</span>
-                                <span>리얼 망고</span>
-                                <span>스파이시 열무 비빔 쫄면</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>COLD Line</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">리얼 망고</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">스파이시 열무 비빔 쫄면</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/classic_cold_img01.jpg" alt="cold_img01">
-                                <span>아이스 망고와 키위를 넣고 망고리플잼에 버무린 메뉴</span>
+                                <img src="img/classic_cold_img01.jpg" alt="리얼 망고">
+                                <p class="menu_detail_content">아이스 망고와 키위를 넣고 망고리플잼에 버무린 메뉴</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_cold_img02.jpg" alt="cold_img01">
-                                <span>아삭한 콩나물, 쑥갓을 쫄깃한 쫄면과</span>
-                                <span>매콤한 레드페퍼 소스에 버무린 쫄면</span>
+                                <img src="img/classic_cold_img02.jpg" alt="스파이시 열무 비빔 쫄면">
+                                <p class="menu_detail_content">
+                                    아삭한 콩나물, 쑥갓을 쫄깃한 쫄면과<br />
+                                    매콤한 레드페퍼 소스에 버무린 쫄면
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_4">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>VIETNAM Food Line</span>
-                                <span>칠리 크랩 &amp; 스틱</span>
-                                <span>게살 마요 피자 토스트</span>
-                                <span>팟타이 파스타</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>VIETNAM Food Line</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">튜나콘믹스</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">애슐리 생누들</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">베트남 월남쌈 존</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/classic_vietnam_img01.jpg" alt="vietnam_img01">
-                                <span>따듯한 밥과 월남쌈존의 튜나콘믹스</span>
-                                <span>게살볶음밥존의 매콤소스를 넣어 비빔밥을 즐겨보세요.</span>
+                                <img src="img/classic_vietnam_img01.jpg" alt="칠리 크랩 스틱">
+                                <p class="menu_detail_content">
+                                    따듯한 밥과 월남쌈존의 튜나콘믹스<br />
+                                    게살볶음밥존의 매콤소스를 넣어 비빔밥을 즐겨보세요.
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_vietnam_img02.jpg" alt="vietnam_img02">
-                                <span>보들보들 생 누들에 깊은 맛이 감도는 육수와 함께</span>
-                                <span>다양한 토핑을 원하는대로 올려 즐기는 애슐리 생누들</span>
+                                <img src="img/classic_vietnam_img02.jpg" alt="게살 마요 피자 토스트">
+                                <p class="menu_detail_content">
+                                    보들보들 생 누들에 깊은 맛이 감도는 육수와 함께<br />
+                                    다양한 토핑을 원하는대로 올려 즐기는 애슐리 생누들
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_vietnam_img03.jpg" alt="vietnam_img03">
-                                <span>갖가지 야채와 토핑들로 건강하고 상쾌하게 즐기는</span>
-                                <span>베트남 월남쌈 존</span>
+                                <img src="img/classic_vietnam_img03.jpg" alt="팟타이 파스타">
+                                <p class="menu_detail_content">
+                                    갖가지 야채와 토핑들로 건강하고 상쾌하게 즐기는<br />
+                                    베트남 월남쌈 존
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_5">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>DESSERT Line</span>
-                                <span>일로일로 파인망고 케이크</span>
-                                <span>츄러스에 바나나?</span>
-                                <span>망고탱고 에이드</span>
-                                <span>스린 망고젤리</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>DESSERT Line</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">일로일로 파인망고 케이크</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">츄러스에 바나나?</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">망고탱고 에이드</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">스린 망고젤리</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/classic_season_img05.jpg" alt="dessert_img01">
-                                <span>촉촉한 초코시트에 딸기 생크림을 덮은 달콤한 디저트</span>
+                                <img src="img/classic_season_img05.jpg" alt="일로일로 파인망고 케이크">
+                                <p class="menu_detail_content">촉촉한 초코시트에 딸기 생크림을 덮은 달콤한 디저트</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img09.jpg" alt="dessert_img02">
-                                <span>바나나, 바나나크림을 채운 케이크에 츄러스를 꽂은 이색디저트</span>
+                                <img src="img/classic_season_img09.jpg" alt="츄러스에 바나나">
+                                <p class="menu_detail_content">바나나, 바나나크림을 채운 케이크에 츄러스를 꽂은 이색디저트</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img10.jpg" alt="dessert_img03">
-                                <span>달달한 망고시럽과 톡 쏘는 스파클링의 만남</span>
+                                <img src="img/classic_season_img10.jpg" alt="망고탱고 에이드">
+                                <p class="menu_detail_content">달달한 망고시럽과 톡 쏘는 스파클링의 만남</p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_season_img11.jpg" alt="dessert_img04">
-                                <span>달콤 망고, 향근 복숭아맛의 타이완 야시장 명물 디저트</span>
+                                <img src="img/classic_season_img11.jpg" alt="스린 망고젤리">
+                                <p class="menu_detail_content">달콤 망고, 향근 복숭아맛의 타이완 야시장 명물 디저트</p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_6">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>TAKE OUT</span>
-                                <span>애슐리 오리지널 치킨 투 고</span>
-                                <span>애슐리 치즈케이크</span>
-                                <span>초코 브라우니케이크</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>TAKE OUT</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">애슐리 오리지널 치킨 투 고</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">애슐리 치즈케이크</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">초코 브라우니케이크</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/classic_takeout_img01.jpg" alt="takeout_img01">
-                                <span>겉은 바삭바삭, 속은 두툼한 닭다리살이 부드러운</span>
-                                <span>신선한 닭고기를 바삭하게 튀겨낸 프라이드 통살치킨</span>
+                                <img src="img/classic_takeout_img01.jpg" alt="애슐리 오리지널 치킨 투 고">
+                                <p class="menu_detail_content">
+                                    겉은 바삭바삭, 속은 두툼한 닭다리살이 부드러운<br />
+                                    신선한 닭고기를 바삭하게 튀겨낸 프라이드 통살치킨
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_takeout_img02.jpg" alt="takeout_img02">
-                                <span>부드러운 식감과 진한 치즈의 풍미가 입안에서 깊이 느껴지는</span>
-                                <span>애슐리 대표 디저트 치즈 케이크</span>
+                                <img src="img/classic_takeout_img02.jpg" alt="애슐리 치즈케이크">
+                                <p class="menu_detail_content">
+                                    부드러운 식감과 진한 치즈의 풍미가 입안에서 깊이 느껴지는<br />
+                                    애슐리 대표 디저트 치즈 케이크
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_takeout_img03.jpg" alt="takeout_img03">
-                                <span>진한 리얼 초콜릿 가나슈로 아이싱한 부드러운 초코시트의</span>
-                                <span>애슐리 브라우니</span>
+                                <img src="img/classic_takeout_img03.jpg" alt="초코 브라우니케이크">
+                                <p class="menu_detail_content">
+                                    진한 리얼 초콜릿 가나슈로 아이싱한 부드러운 초코시트의<br />
+                                    애슐리 브라우니
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_7">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>DRINK &amp; WINE</span>
-                                <span>이태리 프리미엄 와인 4종</span>
-                                <span>패션후르츠, 크랜베리, 스윗민트</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>DRINK &amp; WINE</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">이태리 프리미엄 와인 4종</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">패션후르츠, 크랜베리, 스윗민트</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/classic_drink_img01.jpg" alt="drink_img01">
-                                <span>3000원으로 무제한 즐기는 이태리 프리미엄 와인</span>
-                                <span>애슐리 무제한 와인으로 식사에 풍미를 더하세요!</span>
-                                <span>그릴 메뉴의 풍미를 더하는 멧롯 까베르와 프로세코,</span>
-                                <span>달콤한 스파클링의 유혹! 모스카토, 브라케토</span>
+                                <img src="img/classic_drink_img01.jpg" alt="이태리 프리미엄 와인 4종">
+                                <p class="menu_detail_content">
+                                    3000원으로 무제한 즐기는 이태리 프리미엄 와인<br />
+                                    애슐리 무제한 와인으로 식사에 풍미를 더하세요!<br />
+                                    그릴 메뉴의 풍미를 더하는 멧롯 까베르와 프로세코,<br />
+                                    달콤한 스파클링의 유혹! 모스카토, 브라케토
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_drink_img02.jpg" alt="drink_img02">
-                                <span>에이드 피쳐 1500cc - 6900원</span>
-                                <span>에이드 한잔 330cc - 3500원</span>
+                                <img src="img/classic_drink_img02.jpg" alt="패션후르츠, 크랜베리, 스윗민트">
+                                <p class="menu_detail_content">
+                                    에이드 피쳐 1500cc - 6900원<br />
+                                    에이드 한잔 330cc - 3500원
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="w">
-                <div class="type_cover">
+                <div class="w">
                     <div class="type_infor">
-                        <div class="type_content">
-                            <img src="img/type_w_img_1.jpg" alt="w_img_1">
-                            <p>
-                                <span>MENU INFO</span>
-                                <span class="menu_move_1">SEASON SPECIAL Line</span>
-                                <span class="menu_move_2">MAIN MENU</span>
-                                <span class="menu_move_3">Pizza &amp; Pasta Line</span>
-                                <span class="menu_move_4">HOT Line</span>
-                                <span class="menu_move_5">COLD Line</span>
-                                <span class="menu_move_6">DESSERT Line</span>
-                                <span class="menu_move_7">TAKE OUT</span>
-                                <span class="menu_move_8">DRINK &amp; WINE</span>
-                            </p>
+                        <div class="type_menu">
+                            <button type="button">뒤로가기</button>
+                            <dl class="type_menu_list">
+                                <dt class="type_menu_name"><strong>MENU INFO</strong></dt>
+                                <dd class="type_menu_item">
+                                    <button type="button">SEASON SPECIAL Line</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">MAIN MENU</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">Pizza &amp; Pasta Line</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">HOT Line</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">COLD Line</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">DESSERT Line</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">TAKE OUT</button>
+                                </dd>
+                                <dd class="type_menu_item">
+                                    <button type="button">DRINK &amp; WINE</button>
+                                </dd>
+                            </dl>
                         </div>
-                        <div class="type_content">
-                            <img src="img/type_w_img_2.png" alt="w_img_2">
-                            <p>
-                                <span>* 신속한 안내와 함께 많은 고객님께 애슐리를 이용할 수 있는 ‘2시간 만찬 이용제’를 진행하고 있습니다.</span>
-                                <span>* 샐러드바 음식은 포장이 되지 않습니다.</span>
-                                <span>* 메인메뉴는 단품가격으로 샐러드바 가격은 별도 추가 됩니다.</span>
-                                <span>* 평일에는 17시 이전 퇴점하시는 고객님에 한해 런치가격이 적용됩니다.</span>
-                                <span>* 미취학아동, 초등학생, 성인 요금 적용은 당 해 년도 나이 기준이 아닌 취학을 기준으로 적용됩니다. </span>
-                                <span>* 3월 초등학교 입학예정인 미취학아동 → 초등학교 입학 후부터 초등학생 요금 적용됩니다.</span>
-                                <span>* 만 7세 이상도 취학 전이면 미취학 아동 요금 적용됩니다. </span>
-                                <span>* 3월 중학교 입학 예정인 초등학생 → 중학교 입학 후부터 성인 요금 적용됩니다.</span>
-                                <span>* 36개월 미만 어린이는 샐러드바 무료이며, 동반 2인까지 가능합니다.</span>
-                                <span>* 36개월 미만, 미취학 아동, 초등학생의 경우에 등본, 건강보험증(사본) 등 증빙자료를 요청드릴 수 있습니다.</span>
+                        <div class="type_price">
+                            <img src="img/type_w_img_2.png" alt="w price list">
+                            <p class="type_price_client">
+                                * 신속한 안내와 함께 많은 고객님께 애슐리를 이용할 수 있는 ‘2시간 만찬 이용제’를 진행하고 있습니다.<br />
+                                * 샐러드바 음식은 포장이 되지 않습니다.<br />
+                                * 메인메뉴는 단품가격으로 샐러드바 가격은 별도 추가 됩니다.<br />
+                                * 평일에는 17시 이전 퇴점하시는 고객님에 한해 런치가격이 적용됩니다.<br />
+                                * 미취학아동, 초등학생, 성인 요금 적용은 당 해 년도 나이 기준이 아닌 취학을 기준으로 적용됩니다. <br />
+                                * 3월 초등학교 입학예정인 미취학아동 → 초등학교 입학 후부터 초등학생 요금 적용됩니다.<br />
+                                * 만 7세 이상도 취학 전이면 미취학 아동 요금 적용됩니다. <br />
+                                * 3월 중학교 입학 예정인 초등학생 → 중학교 입학 후부터 성인 요금 적용됩니다.<br />
+                                * 36개월 미만 어린이는 샐러드바 무료이며, 동반 2인까지 가능합니다.<br />
+                                * 36개월 미만, 미취학 아동, 초등학생의 경우에 등본, 건강보험증(사본) 등 증빙자료를 요청드릴 수 있습니다.
                             </p>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_1">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>SEASON SPECIAL Line</span>
-                                <span>치즈 러버 포테이토 D.I.Y</span>
-                                <span>카라멜 크런치 바나나 케이크</span>
-                                <span>바나나 몽블랑</span>
-                                <span>치즈 러버 불떡</span>
-                                <span>치즈 퐁듀 바게트</span>
-                                <span>바나나 슈</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>SEASON SPECIAL Line</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">치즈 러버 포테이토 D.I.Y</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">카라멜 크런치 바나나 케이크</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">바나나 몽블랑</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">치즈 러버 불떡</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">치즈 퐁듀 바게트</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">바나나 슈</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/w_season_img01.jpg" alt="season_img01">
-                                <span>부드러운 포토이토에 체다치즈 소스, 샤워크림, 할라피뇨 등</span>
-                                <span>원하는 토핑을 올려 즐겨보세요</span>
+                                <img src="img/w_season_img01.jpg" alt="치즈 러버 포테이토 D.I.Y">
+                                <p class="menu_detail_content">
+                                    부드러운 포토이토에 체다치즈 소스, 샤워크림, 할라피뇨 등<br />
+                                    원하는 토핑을 올려 즐겨보세요
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/w_season_img02.jpg" alt="season_img02">
-                                <span>로투스 크럼블과 바나나 칩으로</span>
-                                <span>바삭한 맛을 더한 떠먹는 바나나 케이크</span>
+                                <img src="img/w_season_img02.jpg" alt="카라멜 크런치 바나나 케이크">
+                                <p class="menu_detail_content">
+                                    로투스 크럼블과 바나나 칩으로<br />
+                                    바삭한 맛을 더한 떠먹는 바나나 케이크
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/w_season_img03.jpg" alt="season_img03">
-                                <span>초코케이크 시트위에 바나나크림을 가득</span>
-                                <span>쌓아올린 쁘띠 디져트</span>
+                                <img src="img/w_season_img03.jpg" alt="바나나 몽블랑">
+                                <p class="menu_detail_content">
+                                    초코케이크 시트위에 바나나크림을 가득<br />
+                                    쌓아올린 쁘띠 디져트
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/w_season_img04.jpg" alt="season_img04">
-                                <span>매콤양념 국물 떡볶이 위에 </span>
-                                <span>쭉쭉 늘어나는 멜팅치즈가 듬뿍</span>
+                                <img src="img/w_season_img04.jpg" alt="치즈 러버 불떡">
+                                <p class="menu_detail_content">
+                                    매콤양념 국물 떡볶이 위에<br />
+                                    쭉쭉 늘어나는 멜팅치즈가 듬뿍
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/w_season_img05.jpg" alt="season_img05">
-                                <span>바삭한 바게트에 고소하고 달콤한 치즈퐁듀를</span>
-                                <span>듬푹 덮은 치즈 바게트</span>
+                                <img src="img/w_season_img05.jpg" alt="치즈 퐁듀 바게트">
+                                <p class="menu_detail_content">
+                                    바삭한 바게트에 고소하고 달콤한 치즈퐁듀를<br />
+                                    듬푹 덮은 치즈 바게트
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/w_season_img06.jpg" alt="season_img06">
-                                <span>달콤한 바나나, 바나나크림을</span>
-                                <span>가득 품은 슈</span>
+                                <img src="img/w_season_img06.jpg" alt="바나나 슈">
+                                <p class="menu_detail_content">
+                                    달콤한 바나나, 바나나크림을<br />
+                                    가득 품은 슈
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_2">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>MAIN Line</span>
-                                <span>스톤 빅 등심 스테이크</span>
-                                <span>뉴욕 스톤 스테이크</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>MAIN Line</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">스톤 빅 등심 스테이크</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">뉴욕 스톤 스테이크</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/w_main_img01.jpg" alt="main_img01">
-                                <span>지글지글 핫 스톤 위에 빅 사이즈 2인용 스테이크를 즉석에서 구워</span>
-                                <span>소고기 등심 자체의 풍부한 육즙과 육질을 즐길 수 있는</span>
-                                <span>애슐리 인기 메뉴</span>
+                                <img src="img/w_main_img01.jpg" alt="스톤 빅 등심 스테이크">
+                                <p class="menu_detail_content">
+                                    지글지글 핫 스톤 위에 빅 사이즈 2인용 스테이크를 즉석에서 구워<br />
+                                    소고기 등심 자체의 풍부한 육즙과 육질을 즐길 수 있는<br />
+                                    애슐리 인기 메뉴
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/w_main_img02.jpg" alt="main_img02">
-                                <span>셀러드 바 가격은 별도 추가 됩니다.</span>
+                                <img src="img/w_main_img02.jpg" alt="뉴욕 스톤 스테이크">
+                                <p class="menu_detail_content">셀러드 바 가격은 별도 추가 됩니다.</p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_3">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>PIZZA &amp; PASTA Line</span>
-                                <span>고르존 졸라 크림 파스타</span>
-                                <span>마게리타 피자</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>PIZZA &amp; PASTA Line</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">고르존 졸라 크림 파스타</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">마게리타 피자</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/w_pasta_img01.jpg" alt="pasta_img01">
+                                <img src="img/w_pasta_img01.jpg" alt="고르존 졸라 크림 파스타">
                             </div>
                             <div class="menu_detail">
-                                <img src="img/w_pizza_img01.jpg" alt="pizza_img01">
-                                <span>토마토 소스에 치즈를 올려 구운 베이직 피자</span>
+                                <img src="img/w_pizza_img01.jpg" alt="마게리타 피자">
+                                <p>토마토 소스에 치즈를 올려 구운 베이직 피자</p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_4">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>HOT Line</span>
-                                <span>까르보나라 떡볶이</span>
-                                <span>게살 볶음밥</span>
-                                <span>매콤 야끼 우동</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>HOT Line</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">까르보나라 떡볶이</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">게살 볶음밥</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">매콤 야끼 우동</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/w_hot_img01.jpg" alt="hot_img01">
-                                <span>부드러운 까르보나라 크림소스와 달콤 짭조름 데리야끼 소스르 믹스해</span>
-                                <span>구멍이 송송 뚫린 쌀떡과 베이컨, 브로콜리, 양파를 곁들인</span>
-                                <span>애슐리 인기메뉴 까르보나라 떡볶이</span>
+                                <img src="img/w_hot_img01.jpg" alt="까르보나라 떡볶이">
+                                <p class="menu_detail_content">
+                                    부드러운 까르보나라 크림소스와 달콤 짭조름 데리야끼 소스르 믹스해<br />
+                                    구멍이 송송 뚫린 쌀떡과 베이컨, 브로콜리, 양파를 곁들인<br />
+                                    애슐리 인기메뉴 까르보나라 떡볶이
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_hot_img04.jpg" alt="hot_img02">
-                                <span>쫀득하게 씹히는 게살과 몽글몽글한 스크램블 에그를 곁들인</span>
-                                <span>오리엔탈 게살 볶음밥 아이들에게 인기 만점이에요!</span>
+                                <img src="img/classic_hot_img04.jpg" alt="게살 볶음밥">
+                                <p class="menu_detail_content">
+                                    쫀득하게 씹히는 게살과 몽글몽글한 스크램블 에그를 곁들인<br />
+                                    오리엔탈 게살 볶음밥 아이들에게 인기 만점이에요!
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/w_hot_img03.jpg" alt="hot_img02">
-                                <span>양배추, 양파 등의 야채와 함께 매콤한 소스로 함께 볶아낸 요리</span>
+                                <img src="img/w_hot_img03.jpg" alt="매콤 야끼 우동">
+                                <p class="menu_detail_content">양배추, 양파 등의 야채와 함께 매콤한 소스로 함께 볶아낸 요리</p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_5">
-                       <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>COLD Line</span>
-                                <span>하와이안 코코넛 셀러드</span>
-                                <span>파머스 스파이시 쫄면</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>COLD Line</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">하와이안 코코넛 셀러드</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">파머스 스파이시 쫄면</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/classic_cold_img01.jpg" alt="cold_img01">
-                                <span>동글동글 쫄깃한 타피오카 펄, 달콤상큼한 키위와 망고,</span>
-                                <span>시원한 용과를 망고장에 버무린 하와이안 스타일의 후르츠 셀러드</span>
+                                <img src="img/classic_cold_img01.jpg" alt="하와이안 코코넛 셀러드">
+                                <p class="menu_detail_content">
+                                    동글동글 쫄깃한 타피오카 펄, 달콤상큼한 키위와 망고,<br />
+                                    시원한 용과를 망고장에 버무린 하와이안 스타일의 후르츠 셀러드
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_cold_img02.jpg" alt="cold_img01">
-                                <span>아삭한 콩나물, 쑥갓을 쫄깃한 쫄면과</span>
-                                <span>매콤한 레드페퍼 소스에 버무린 쫄면</span>
+                                <img src="img/classic_cold_img02.jpg" alt="파머스 스파이시 쫄면">
+                                <p class="menu_detail_content">
+                                    아삭한 콩나물, 쑥갓을 쫄깃한 쫄면과<br />
+                                    매콤한 레드페퍼 소스에 버무린 쫄면
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_6">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>DESSENT OUT</span>
-                                <span>아이스크림</span>
-                                <span>플레인 요거트</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>DESSENT OUT</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">아이스크림</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">플레인 요거트</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/w_dessert_img01.jpg" alt="dessert_img01">
+                                <img src="img/w_dessert_img01.jpg" alt="아이스크림">
                             </div>
                             <div class="menu_detail">
-                                <img src="img/w_dessert_img02.jpg" alt="dessert_img01">
-                                <span>우유와 유산균을 주재료로 사용하여 담백하고 상큼한 맛이 일품인</span>
-                                <span>플레인 요거트! 각종 토핑과 곁들여 함께 즐기세요.</span>
+                                <img src="img/w_dessert_img02.jpg" alt="플레인 요거트">
+                                <p class="menu_detail_content">
+                                    우유와 유산균을 주재료로 사용하여 담백하고 상큼한 맛이 일품인<br />
+                                    플레인 요거트! 각종 토핑과 곁들여 함께 즐기세요.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_7">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>TAKE OUT</span>
-                                <span>애슐리 오리지널 치킨 투 고</span>
-                                <span>애슐리 치즈케이크</span>
-                                <span>초코 브라우니케이크</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>TAKE OUT</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">애슐리 오리지널 치킨 투 고</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">애슐리 치즈케이크</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">초코 브라우니케이크</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/classic_takeout_img01.jpg" alt="takeout_img01">
-                                <span>겉은 바삭바삭, 속은 두툼한 닭다리살이 부드러운</span>
-                                <span>신선한 닭고기를 바삭하게 튀겨낸 프라이드 통살치킨</span>
+                                <img src="img/classic_takeout_img01.jpg" alt="애슐리 오리지널 치킨 투 고">
+                                <p class="menu_detail_content">
+                                    겉은 바삭바삭, 속은 두툼한 닭다리살이 부드러운<br />
+                                    신선한 닭고기를 바삭하게 튀겨낸 프라이드 통살치킨
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_takeout_img02.jpg" alt="takeout_img02">
-                                <span>부드러운 식감과 진한 치즈의 풍미가 입안에서 깊이 느껴지는</span>
-                                <span>애슐리 대표 디저트 치즈 케이크</span>
+                                <img src="img/classic_takeout_img02.jpg" alt="애슐리 치즈케이크">
+                                <p class="menu_detail_content">
+                                    부드러운 식감과 진한 치즈의 풍미가 입안에서 깊이 느껴지는<br />
+                                    애슐리 대표 디저트 치즈 케이크
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_takeout_img03.jpg" alt="takeout_img03">
-                                <span>진한 리얼 초콜릿 가나슈로 아이싱한 부드러운 초코시트의</span>
-                                <span>애슐리 브라우니</span>
+                                <img src="img/classic_takeout_img03.jpg" alt="초코 브라우니케이크">
+                                <p class="menu_detail_content">
+                                    진한 리얼 초콜릿 가나슈로 아이싱한<br />
+                                    부드러운 초코시트의애슐리 브라우니
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_8">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>DRINK &amp; WINE</span>
-                                <span>이태리 프리미엄 와인 4종</span>
-                                <span>패션후르츠, 크랜베리, 스윗민트</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>DRINK &amp; WINE</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">이태리 프리미엄 와인 4종</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">패션후르츠, 크랜베리, 스윗민트</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/classic_drink_img01.jpg" alt="drink_img01">
-                                <span>3000원으로 무제한 즐기는 이태리 프리미엄 와인</span>
-                                <span>애슐리 무제한 와인으로 식사에 풍미를 더하세요!</span>
-                                <span>그릴 메뉴의 풍미를 더하는 멧롯 까베르와 프로세코,</span>
-                                <span>달콤한 스파클링의 유혹! 모스카토, 브라케토</span>
+                                <img src="img/classic_drink_img01.jpg" alt="이태리 프리미엄 와인 4종">
+                                <p class="menu_detail_content">
+                                    3000원으로 무제한 즐기는 이태리 프리미엄 와인<br />
+                                    애슐리 무제한 와인으로 식사에 풍미를 더하세요!<br />
+                                    그릴 메뉴의 풍미를 더하는 멧롯 까베르와 프로세코,<br />
+                                    달콤한 스파클링의 유혹! 모스카토, 브라케토
+                                </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/classic_drink_img02.jpg" alt="drink_img02">
-                                <span>에이드 피쳐 1500cc - 6900원</span>
-                                <span>에이드 한잔 330cc - 3500원</span>
+                                <img src="img/classic_drink_img02.jpg" alt="패션후르츠, 크랜베리, 스윗민트">
+                                <p class="menu_detail_content">
+                                    에이드 피쳐 1500cc - 6900원<br />
+                                    에이드 한잔 330cc - 3500원
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>    
-            <div id="a_lab">
-                <div class="type_cover">
+                </div>    
+                <div class="a_lab">
                     <div class="type_infor">
-                        <div class="type_content">
-                            <img src="img/type_a_lab_img_1.jpg" alt="a_lab_img_1">
-                            <p>
-                                <span>MENU INFO</span>
-                                <span class="menu_move_1">MENU</span>
-                            </p>
+                        <div class="type_menu">
+                            <button type="button">뒤로가기</button>
+                            <dl class="type_menu_list">
+                                <dt class="type_menu_name"><strong>MENU INFO</strong></dt>
+                                <dd class="type_menu_item">
+                                    <button type="button">MENU</button>
+                                </dd>
+                            </dl>
                         </div>
-                        <div class="type_content">
-                            <img src="img/type_a_lab_img_2.png" alt="a_lab_img_2">
-                            <p>
-                                <span>* 신속한 안내와 함께 많은 고객님께 애슐리를 이용할 수 있는 ‘2시간 만찬 이용제’를 진행하고 있습니다.</span>
-                                <span>*샐러드바 음식은 포장이 되지 않습니다.</span>
-                                <span>*메인메뉴는 단품가격으로 샐러드바 가격은 별도 추가 됩니다.</span>
-                                <span>*평일에는 17시 이전 퇴점하시는 고객님에 한해 런치가격이 적용됩니다.</span>
-                                <span>*미취학아동, 초등학생, 성인 요금 적용은 당 해 년도 나이 기준이 아닌 취학을 기준으로 적용됩니다. </span>
-                                <span>3월 초등학교 입학예정인 미취학아동 → 초등학교 입학 후부터 초등학생 요금 적용됩니다.</span>
-                                <span>만 7세 이상도 취학 전이면 미취학 아동 요금 적용됩니다. </span>
-                                <span>3월 중학교 입학 예정인 초등학생 → 중학교 입학 후부터 성인 요금 적용됩니다.</span>
-                                <span>* 36개월 미만 어린이는 샐러드바 무료이며, 동반 2인까지 가능합니다.</span>
-                                <span>* 36개월 미만, 미취학 아동, 초등학생의 경우에 등본, 건강보험증(사본) 등 증빙자료를 요청드릴 수 있습니다.</span>
+                        <div class="type_price">
+                            <img src="img/type_a_lab_img_2.png" alt="a lab price list">
+                            <p class="type_price_client">
+                                * 신속한 안내와 함께 많은 고객님께 애슐리를 이용할 수 있는 ‘2시간 만찬 이용제’를 진행하고 있습니다.<br />
+                                *샐러드바 음식은 포장이 되지 않습니다.<br />
+                                *메인메뉴는 단품가격으로 샐러드바 가격은 별도 추가 됩니다.<br />
+                                *평일에는 17시 이전 퇴점하시는 고객님에 한해 런치가격이 적용됩니다.<br />
+                                *미취학아동, 초등학생, 성인 요금 적용은 당 해 년도 나이 기준이 아닌 취학을 기준으로 적용됩니다. <br />
+                                3월 초등학교 입학예정인 미취학아동 → 초등학교 입학 후부터 초등학생 요금 적용됩니다.<br />
+                                만 7세 이상도 취학 전이면 미취학 아동 요금 적용됩니다. <br />
+                                3월 중학교 입학 예정인 초등학생 → 중학교 입학 후부터 성인 요금 적용됩니다.<br />
+                                * 36개월 미만 어린이는 샐러드바 무료이며, 동반 2인까지 가능합니다.<br />
+                                * 36개월 미만, 미취학 아동, 초등학생의 경우에 등본, 건강보험증(사본) 등 증빙자료를 요청드릴 수 있습니다.
                             </p>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_1">
-                        <i class="fas fa-arrow-left fa-2x"></i>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                        </div>
                         <img src="img/a_lab_menu_img.jpg" alt="a_lab_menu_img.jpg">
                     </div>
                 </div>
-            </div>
-            <div id="queens">
-                <div class="type_cover">
+                <div class="queens">
                     <div class="type_infor">
-                        <div class="type_content">
-                            <img src="img/type_queens_img_1.jpg" alt="queens_img_1">
-                            <p>
-                                <span>MENU INFO</span>
-                                <span class="menu_move_1">MENU</span>
-                            </p>
+                        <div class="type_menu">
+                            <button type="button">뒤로가기</button>
+                            <dl class="type_menu_list">
+                                <dt class="type_menu_name"><strong>MENU INFO</strong></dt>
+                                <dd class="type_menu_item">
+                                    <button type="button">MENU</button>
+                                </dd>
+                            </dl>
                         </div>
-                        <div class="type_content">
-                            <img src="img/type_queens_img_2.png" alt="queens_img_2">
-                            <p>
-                                <span>* 신속한 안내와 함께 많은 고객님께 애슐리를 이용할 수 있는 ‘2시간 만찬 이용제’를 진행하고 있습니다.</span>
-                                <span>*샐러드바 음식은 포장이 되지 않습니다.</span>
-                                <span>*메인메뉴는 단품가격으로 샐러드바 가격은 별도 추가 됩니다.</span>
-                                <span>*평일에는 17시 이전 퇴점하시는 고객님에 한해 런치가격이 적용됩니다.</span>
-                                <span>*미취학아동, 초등학생, 성인 요금 적용은 당 해 년도 나이 기준이 아닌 취학을 기준으로 적용됩니다. </span>
-                                <span>3월 초등학교 입학예정인 미취학아동 → 초등학교 입학 후부터 초등학생 요금 적용됩니다.</span>
-                                <span>만 7세 이상도 취학 전이면 미취학 아동 요금 적용됩니다. </span>
-                                <span>3월 중학교 입학 예정인 초등학생 → 중학교 입학 후부터 성인 요금 적용됩니다.</span>
-                                <span>* 36개월 미만 어린이는 샐러드바 무료이며, 동반 2인까지 가능합니다.</span>
-                                <span>* 36개월 미만, 미취학 아동, 초등학생의 경우에 등본, 건강보험증(사본) 등 증빙자료를 요청드릴 수 있습니다.</span>
+                        <div class="type_price">
+                            <img src="img/type_queens_img_2.png" alt="queens price list">
+                            <p class="type_price_client">
+                                * 신속한 안내와 함께 많은 고객님께 애슐리를 이용할 수 있는 ‘2시간 만찬 이용제’를 진행하고 있습니다.<br />
+                                *샐러드바 음식은 포장이 되지 않습니다.<br />
+                                *메인메뉴는 단품가격으로 샐러드바 가격은 별도 추가 됩니다.<br />
+                                *평일에는 17시 이전 퇴점하시는 고객님에 한해 런치가격이 적용됩니다.<br />
+                                *미취학아동, 초등학생, 성인 요금 적용은 당 해 년도 나이 기준이 아닌 취학을 기준으로 적용됩니다. <br />
+                                3월 초등학교 입학예정인 미취학아동 → 초등학교 입학 후부터 초등학생 요금 적용됩니다.<br />
+                                만 7세 이상도 취학 전이면 미취학 아동 요금 적용됩니다. <br />
+                                3월 중학교 입학 예정인 초등학생 → 중학교 입학 후부터 성인 요금 적용됩니다.<br />
+                                * 36개월 미만 어린이는 샐러드바 무료이며, 동반 2인까지 가능합니다.<br />
+                                * 36개월 미만, 미취학 아동, 초등학생의 경우에 등본, 건강보험증(사본) 등 증빙자료를 요청드릴 수 있습니다.
                             </p>
                         </div>
                     </div>
                     <div class="menu_infor menu_content_1">
-                        <div class="menu_content">
-                            <i class="fas fa-arrow-left fa-2x"></i>
-                            <p>
-                                <span>MENU</span>
-                                <span>비프 스테이크</span>
-                                <span>DIY 베트남 누들</span>
-                                <span>세프 알라카르트</span>
-                                <span>그릴 BBQ</span>
-                                <span>디저트 부티크</span>
-                                <span>바리스타 커피 &amp; 세계의 티</span>
-                            </p>
+                        <div class="menu_list">
+                            <button type="button">뒤로가기</button>
+                            <dl class="detail_menu_list">
+                                <dt class="detail_menu_name"><strong>MENU</strong></dt>
+                                <dd class="detail_menu_item">
+                                    <button type="button">비프 스테이크</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">DIY 베트남 누들</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">세프 알라카르트</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">그릴 BBQ</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">디저트 부티크</button>
+                                </dd>
+                                <dd class="detail_menu_item">
+                                    <button type="button">바리스타 커피 &amp; 세계의 티</button>
+                                </dd>
+                            </dl>
                         </div>
                         <div class="menu_content">
                             <div class="menu_detail">
-                                <img src="img/queens_img01.jpg" alt="queens_img01">
-                                <p>
-                                    <span>그릴에서 직접 구워 육즙이 풍부한 비프 스테이크를</span>
-                                    <span>입맛에 맞는 소스와 야채를 곁들여 즐겨보세요!</span>
+                                <img src="img/queens_img01.jpg" alt="비프 스테이크">
+                                <p class="menu_detail_content">
+                                    그릴에서 직접 구워 육즙이 풍부한 비프 스테이크를<br />
+                                    입맛에 맞는 소스와 야채를 곁들여 즐겨보세요!
                                 </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/queens_img02.jpg" alt="queens_img02">
-                                <p>
-                                    <span>소고기, 홍합, 숙주, 양파, 청경채, 버섯등의</span>
-                                    <span>토핑을 입맛에 맞게 담아 즐기는 DIY 쌀국수</span>
+                                <img src="img/queens_img02.jpg" alt="DIY 베트남 누들">
+                                <p class="menu_detail_content">
+                                    소고기, 홍합, 숙주, 양파, 청경채, 버섯등의<br />
+                                    토핑을 입맛에 맞게 담아 즐기는 DIY 쌀국수
                                 </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/queens_img03.jpg" alt="queens_img03">
-                                <p>
-                                    <span>다양한 곁들임과 함께 즐기는 살몬파티 플레이트 셀러드와 입맛을</span>
-                                    <span>돋워주는 일품 전체요리 다양한 고급 애피타이저를 즐길 수 있는</span>
-                                    <span>퀸즈만의 알라카르트</span>
+                                <img src="img/queens_img03.jpg" alt="세프 알라카르트">
+                                <p class="menu_detail_content">
+                                    다양한 곁들임과 함께 즐기는 살몬파티 플레이트 셀러드와 입맛을<br />
+                                    돋워주는 일품 전체요리 다양한 고급 애피타이저를 즐길 수 있는<br />
+                                    퀸즈만의 알라카르트
                                 </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/queens_img04.jpg" alt="queens_img04">
-                                <p>
-                                    <span>퀸즈의 그릴 스테이션이 더욱 풍성해졌습니다.</span>
-                                    <span>정통의 맛과 향이 살아있는 그릴과 라이브스테이션의 눈앞에서</span>
-                                    <span>요리해 보는 즐거움까지 더했습니다.</span>
+                                <img src="img/queens_img04.jpg" alt="그릴 BBQ">
+                                <p class="menu_detail_content">
+                                    퀸즈의 그릴 스테이션이 더욱 풍성해졌습니다.<br />
+                                    정통의 맛과 향이 살아있는 그릴과 라이브스테이션의 눈앞에서<br />
+                                    요리해 보는 즐거움까지 더했습니다.
                                 </p>
                             </div>
                             <div class="menu_detail">
-                                <img src="img/queens_img05.jpg" alt="queens_img05">
-                                <p>
-                                    <span>달콤한 케이크와 스페셜한 디저트들이</span>
-                                    <span>르 꼬르동 블루 파티시에의 손 끝에서 마법처럼 피어납니다.</span>
-                                    <span>시크릿 레시피부터 여왕처럼 즐기는 애프터눈 티타임까지</span>
-                                    <span>디저트 부티크의 품격과 여유를 만끽하세요.</span>
+                                <img src="img/queens_img05.jpg" alt="디저트 부티크">
+                                <p class="menu_detail_content">
+                                    달콤한 케이크와 스페셜한 디저트들이<br />
+                                    르 꼬르동 블루 파티시에의 손 끝에서 마법처럼 피어납니다.<br />
+                                    시크릿 레시피부터 여왕처럼 즐기는 애프터눈 티타임까지<br />
+                                    디저트 부티크의 품격과 여유를 만끽하세요.
                                 </p>
                                 </div>
                             <div class="menu_detail">
-                                <img src="img/queens_img06.jpg" alt="queens_img06">
-                                <p>
-                                    <span>전문 바리스타가 갓 뽑아낸 커피와 전 세계적으로 사랑 받고</span>
-                                    <span>있는 20여종의 티로 모임의 품격까지 높여드립니다.</span>
+                                <img src="img/queens_img06.jpg" alt="바리스타 커피, 세계의 티">
+                                <p class="menu_detail_content">
+                                    전문 바리스타가 갓 뽑아낸 커피와 전 세계적으로 사랑 받고<br />
+                                    있는 20여종의 티로 모임의 품격까지 높여드립니다.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="store">
+        </article>
+        <article class="store">
+            <h3 class="blind">store</h3>
             <div id="map"></div>
-            <div id="store_btn">
-                <div>
-                    <span>CLASSIC</span>
-                </div>
-                <div>
-                    <span>W</span>
-                </div>
-                <div>
-                    <span>A_LAB</span>
-                </div>
-                <div>
-                    <span>QUEENS</span>
-                </div>
+            <ul class="store_btn_area">
+                <li class="store_btn">
+                    <button type="button">CLASSIC</button>
+                </li>
+                <li class="store_btn">
+                    <button type="button">W</button>
+                </li>
+                <li class="store_btn">
+                    <button type="button">A_LAB</button>
+                </li>
+                <li class="store_btn">
+                    <button type="button">QUEENS</button>
+                </li>
+            </ul>
+        </article>
+        <article class="phone">
+            <h3 class="blind">phone</h3>
+            <div class="phone_area">
+                <table class="table_area">
+                    <tr>
+                        <td rowspan="3" class="table_content call_classic_img"></td>
+                        <td colspan="4" class="table_content">애슐리 classic</td>
+                    </tr>
+                    <tr>
+                        <td class="table_content">고객센터</td>
+                        <td class="table_content">02-1677-1111</td>
+                        <td rowspan="2" class="table_content call_time">상담시간</td>
+                        <td class="table_content">월~목요일 AM 09:00 ~ PM 06:00</td>
+                    </tr>
+                    <tr>
+                        <td class="table_content">채용센터</td>
+                        <td class="table_content">02-1688-1111</td>
+                        <td class="table_content">금요일 AM 09:00 ~ PM 05:30</td>
+                    </tr>
+                </table>
+                <table class="table_area">
+                    <tr>
+                        <td rowspan="3" class="table_content call_w_img"></td>
+                        <td colspan="4" class="table_content">애슐리 w</td>
+                    </tr>
+                    <tr>
+                        <td class="table_content">고객센터</td>
+                        <td class="table_content">02-1677-2222</td>
+                        <td rowspan="2" class="table_content call_time">상담시간</td>
+                        <td class="table_content">월~목요일 AM 09:00 ~ PM 06:00</td>
+                    </tr>
+                    <tr>
+                        <td class="table_content">채용센터</td>
+                        <td class="table_content">02-1688-2222</td>
+                        <td class="table_content">금요일 AM 09:00 ~ PM 05:30</td>
+                    </tr>
+                </table>
+                <table class="table_area">
+                    <tr>
+                        <td rowspan="3" class="table_content call_a_lab_img"></td>
+                        <td colspan="4" class="table_content">애슐리 a lab</td>
+                    </tr>
+                    <tr>
+                        <td class="table_content">고객센터</td>
+                        <td class="table_content">02-1677-3333</td>
+                        <td rowspan="2" class="table_content call_time">상담시간</td>
+                        <td class="table_content">월~목요일 AM 09:00 ~ PM 06:00</td>
+                    </tr>
+                    <tr>
+                        <td class="table_content">채용센터</td>
+                        <td class="table_content">02-1688-3333</td>
+                        <td class="table_content">금요일 AM 09:00 ~ PM 05:30</td>
+                    </tr>
+                </table>
+                <table class="table_area">
+                    <tr>
+                        <td rowspan="3" class="table_content call_queens_img"></td>
+                        <td colspan="4" class="table_content">애슐리 queens</td>
+                    </tr>
+                    <tr>
+                        <td class="table_content">고객센터</td>
+                        <td class="table_content">02-1677-4444</td>
+                        <td rowspan="2" class="table_content call_time">상담시간</td>
+                        <td class="table_content">월~목요일 AM 09:00 ~ PM 06:00</td>
+                    </tr>
+                    <tr>
+                        <td class="table_content">채용센터</td>
+                        <td class="table_content">02-1688-4444</td>
+                        <td class="table_content">금요일 AM 09:00 ~ PM 05:30</td>
+                    </tr>
+                </table>
             </div>
+        </article>
+    </section>
+    <footer class="footer">
+        <p class="copyright">
+            서울 강남구 압구정로 152 극동스포츠센터 지하 1층 (주)이랜드파크 <br />
+            대표이사 : 김현수 &#124; 개인정보보호 책임자 : 김현수<br />
+            대표전화 : 1577-1259 &#124; 이메일 : elandfood@eland.co.kr<br />
+            <small class="small">Copyright©2013 ASHLEY</small>
+        </p>
+        <div class="footer_link">
+            <div class="sns">
+                <a class="sns_link" href="https://blog.naver.com/your_ashley" target="_blank"><img src="img/blog.png" alt="blog"></a>
+                <a class="sns_link" href="https://www.facebook.com/wowAshley" target="_blank"><img src="img/Facebook.png" alt="facebook"></a>
+                <a class="sns_link" href="https://instagram.com/Your_ashley" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+            </div>
+            <ul class="utily_area">
+                <li class="utily_item">
+                    <a class="utily_link" href="#">개인정보처리방침</a>
+                </li>
+                <li class="utily_item">
+                    <a class="utily_link" href="#">영상정보처리기기운영·관리방침</a>
+                </li>
+                <li class="utily_item">
+                    <a class="utily_link" href="#">서비스 이용약관</a>
+                </li>
+            </ul>
         </div>
-        <div id="phone">
-            <div id="phone_area">
-                <div class="phone_content">
-                    <div class="information">
-                        <span>회사명</span>
-                    </div>
-                    <div class="number">
-                        <span>대표 번호</span>
-                    </div>
-                </div>
-                <div class="phone_content">
-                    <div class="information">
-                        <span>애슐리 classic</span>
-                    </div>
-                    <div class="number">
-                        <span>02-1677-1111</span>
-                    </div>
-                </div>
-                <div class="phone_content">
-                    <div class="information">
-                        <span>애슐리 W</span>
-                    </div>
-                    <div class="number">
-                        <span>02-1677-2222</span>
-                    </div>
-                </div>
-                <div class="phone_content">
-                    <div class="information">
-                        <span>애슐리 a-lab</span>
-                    </div>
-                    <div class="number">
-                        <span>02-1677-3333</span>
-                    </div>
-                </div>
-                <div class="phone_content">
-                    <div class="information">
-                        <span>애슐리 Queens</span>
-                    </div>
-                    <div class="number">
-                        <span>02-1677-4444</span>
-                    </div>
-                </div>
-                <div class="phone_content">
-                    <div class="information">
-                        <span>회사 채용 센터</span>
-                    </div>
-                    <div class="number">
-                        <span>대표 번호</span>
-                    </div>
-                </div>
-                <div class="phone_content">
-                    <div class="information">
-                        <span>애슐리 classic 채용 센터</span>
-                    </div>
-                    <div class="number">
-                        <span>02-1688-1111</span>
-                    </div>
-                </div>
-                <div class="phone_content">
-                    <div class="information">
-                        <span>애슐리 W 채용 센터</span>
-                    </div>
-                    <div class="number">
-                        <span>02-1688-2222</span>
-                    </div>
-                </div>
-                <div class="phone_content">
-                    <div class="information">
-                        <span>애슐리 a-lab 채용 센터</span>
-                    </div>
-                    <div class="number">
-                        <span>02-1688-3333</span>
-                    </div>
-                </div>
-                <div class="phone_content">
-                    <div class="information">
-                        <span>애슐리 Queens 채용 센터</span>
-                    </div>
-                    <div class="number">
-                        <span>02-1688-4444</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <p id="copyright">
-                <span>(주) 이랜드파크 | 서울 강남구 압구정로 152 극동스포츠센터 지하 1층</span>
-                <span>대표이사 : 김현수 | 개인정보보호 책임자 : 김현수 | 대표전화 : 1577-1259 | 이메일 : elandfood@eland.co.kr</span>
-                <span>개인정보처리방침 | 영상정보처리기기운영·관리방침 | 서비스 이용약관</span>
-                <span>Copyright©2013 ASHLEY</span>
-            </p>
-            <div id="sns">
-                <a href="https://blog.naver.com/your_ashley" target="_blank"><img src="img/blog.png" alt="blog"></a>
-                <a href="https://www.facebook.com/wowAshley" target="_blank"><img src="img/Facebook.png" alt="facebook"></a>
-                <a href="https://instagram.com/Your_ashley" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
-            </div>
-        </footer>
-    </div>
+    </footer>
     <script type="text/javascript" src="js/map.js"></script>
     <script async defer 
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcpRdWO8UvGNQMdtpFbbTzQHGnGwYi6cI&callback=initMap">

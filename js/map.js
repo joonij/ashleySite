@@ -14,9 +14,9 @@
           
         //    버튼
         var locations = [];
-        $("#store_btn div").click(function(){
+        $(".store_btn button").click(function(){
             deleteMarkers()
-            $("#store_btn div").animate({right:"-50px"}, 100);
+            $(".store_btn button").animate({right:"-50px"}, 100);
             $(this).animate({right:"0px"}, 100, function location(){
                 locations = [];
                 if ($(this).index() === 0) {
